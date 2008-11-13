@@ -1,0 +1,32 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<link href="../sty/task_style.css" rel="stylesheet" media="all">
+		<title>Tips</title>
+		<META NAME="DESCRIPTION" CONTENT="Tips on using Ampede PDF. ">
+	</head>
+
+	<body>
+		<a name="tips"></a>
+		<div id="mainbox">
+			<div id="caticon">
+				<img src="../gfx/about_pdf.png" alt="Ampede PDF Icon" height="32" width="32">
+			</div>
+			<div id="pagetitle">
+				<h1>Tips and Tricks</h1>
+			</div>
+			<p>Here are some general guidelines on using PDF.</p>
+			<ul>
+				<li>After making changes in the Ampede PDF window, you should always press PDF's <b>Force Update</b> checkbox to flush Final Cut Pro's frame cache. If you've made a change and are not seeing it in Final Cut Pro, you've probably forgotten to flush the cache. [Flushing the cache only applies to the clip PDF is applied to; it won't flush other clip's frame caches.]
+				<li>Final Cut Pro's motion controls are located in the Motion tab of the Viewer window. Those controls only work on bitmap images; they <b>do not</b> apply to vector images. If you scale, rotate, or move the clip using the controls in the Motion tab, it will be using the bitmap image output by PDF. To take advantage of continuous rasterization, only use the motion controls provide by PDF.
+				<li>You can turn off antialiasing while you're working with a clip to speed up render times. Then, before your final render, turn it back on and force Final Cut Pro to empty its cache. You can also turn off antialiasing if you're going to blur a clip, since you won't see the aliasing anyway.
+				<li>The image output by PDF is like any other image in Final Cut Pro, so you can use Final Cut Pro's blending modes, create a travel matte, etc.
+				<li>The image output by PDF includes a full alpha channel. If you are just trying to create a travel matte, turn off background fill in the PDF pane of the Ampede PDF window.
+				<li>If you are creating artwork in Illustrator for DV or SD resolution video, create a page with a 4:3 aspect ratio, such as 720 by 540. That will fill the entire video frame without stretching and make it easy to position your artwork within the frame.
+				<li>Illustrator files must be saved with the "Create PDF Compatible File" option turned on in order to be rendered properly by PDF. If you forget to turn it on, you'll see a note reminding you to turn it on.
+				<li>If you want to use an Illustrator file earlier than version 10, you can convert it into a PDF using Apple's Preview application. Then it can be used by PDF.
+		</div>
+	</body>
+	
+</html>

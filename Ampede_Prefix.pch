@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'Ampede' target in the 'Ampede' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+//#define DEBUG_CALLING_SEQUENCE
+
+//#define LICENSING_CONTROL_ON

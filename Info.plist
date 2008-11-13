@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>sequence</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>FCP Sequence</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>SequenceDocument</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeIconFile</key>
+			<string>Final Cut Pro-plugin.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>Final Cut Pro Plugin File</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>APMD</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>LSIsAppleDefaultForType</key>
+			<string>Yes</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>Ampede LCed</string>
+	<key>CFBundleIconFile</key>
+	<string>Final Cut Pro-plugin.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.ampede.pdf.app</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>LSUIElement</key>
+	<string>1</string>
+	<key>LicenseControlledBundle</key>
+	<string>AmpedeBundle</string>
+	<key>NSMainNibFile</key>
+	<string>Ampede</string>
+	<key>NSPrincipalClass</key>
+	<string>Ampede</string>
+	<key>CFBundleHelpBookName</key>
+	<string>Ampede PDF Help</string>
+	<key>CFBundleHelpBookFolder</key>
+	<string>AmpedePDFHelp</string>
+</dict>
+</plist>

@@ -1,0 +1,182 @@
+#define IDENT_BUFLEN 128
+
+%%  Parse_Page
+	alphtype unsigned char;
+
+	# The data that is to go into the fsm structure.
+	struct {
+		fstack[32];
+		char identBuf[IDENT_BUFLEN+1];
+		int identLen;
+		char objectNumBuf[IDENT_BUFLEN+1];
+		char genNumBuf[IDENT_BUFLEN+1];
+		int objectNum;
+		int genNum;
+	};
+
+	# Initialization code that will go into the Num_layersInit routine.
+	init {
+		fsm->identLen = 0;
+	}
+
+	# Function to buffer a character.
+	action bufChar {
+		if ( fsm->identLen < IDENT_BUFLEN ) {
+			fsm->identBuf[fsm->identLen] = fc;
+			fsm->identLen += 1;
+		}
+	}
+
+	# Function to clear the buffer.
+	action clearBuf {
+		fsm->identLen = 0;
+	}
+
+	action objectNum {
+		fsm->identBuf[fsm->identLen] = 0; // add the Null character
+		strcpy( &fsm->objectNumBuf , (const char *)&fsm->identBuf );
+		NSLog(@"\nobject_num is: %s\n", fsm->objectNumBuf);
+	}
+
+	action genNum {
+		fsm->identBuf[fsm->identLen] = 0; // add the Null character
+		strcpy( &fsm->genNumBuf , (const char *)&fsm->identBuf );
+		NSLog(@"\ngen_num is: %s\n", fsm->genNumBuf);
+	}
+
+	action object {
+		// convert the current object and generation number buffers to bona fide ints
+		fsm->objectNum = atoi( (const char *)&fsm->objectNumBuf );
+		fsm->genNum = atoi( (const char *)&fsm->genNumBuf );
+	}
+
+	# Match an object number. Upon entering the machine clear the buf, buffer
+	# characters on every trans and dump the object number upon leaving.
+	objectNum = digit+ >clearBuf $bufChar %objectNum;
+	
+	# Match a generation number. Upon entering the machine clear the buf, buffer
+	# characters on every trans and dump the generation number upon leaving.
+	genNum = digit+ >clearBuf $bufChar %genNum;
+	
+	#recognizes an object being defined and records the info as the "current object"
+	object = objectNum space+ genNum space+ ( 'obj' @object) space+;
+	
+	action A {
+		NSLog(@"an error occurred");
+	}
+
+	action B {
+		NSLog(@"an error occurred");
+	}
+
+	# Locate the page entry, recording the object and generation number along the way 
+	# page = beginPage: (object '/Type' space+ ('/Page' @{fgoto objectData;})) $!{fgoto beginPage;};
+	
+	# read the object data until "endobj" has been read in
+	# objectData := ( any* $0 ) . ( 'endobj' @1 );
+	
+	#whitespace in a PDF file includes the NULL character, and consecutive whitespace is treated as one
+	whitespace = /[\t\f\n\r\0 ]/+;
+	
+	# Reads whitespace until a non-whitespace character is found; executes A on the transition, EOF
+	# main := ( whitespace %A ) . /[^\t\f\n\r\0 ]/?;
+	
+	eol = ( /[\r\n]/ | '\r\n' );
+	
+	# Reads an EOL sequence; executes A on EOF
+	# main := eol %A;
+	
+	delimiter = [()<>\[\]{}/%];
+	
+	# Reads a delimiter character; executes A on EOF
+	# main := delimiter %A;
+	
+	regular = ( any - [\t\f\n\r\0 ()<>\[\]{}/%] );
+	token = regular+;
+	
+	# Reads a token; executes A on EOF, executes B on each transition in the machine (i.e. each character of the token)
+	# main := token $B %A;
+	
+	# Only valid if not currently parsing a stream or comment; executes A on starting the comment, B on ending it
+	comment = ('%' . ( any* $0 ) . ( eol @1 )) >A %B;
+	
+	# Reads a comment, then reads either a token, a comment, or a delimeter; executes A after reading the comment
+	# main := comment . ( token | comment | delimiter );
+	
+	# NOT TESTED
+	separator = (whitespace | comment);
+	
+	# Boolean objects can be used as the values of array elements and dictionary entries, and
+	# can also occur in PostScript calculator functions as the results of boolean and
+	# relational operators and as operands to the conditional operators if and ifelse
+	boolean = ( 'true' | 'false' );
+	
+	# Reads a boolean, executes A on EOF
+	# main := boolean %A;
+	
+	integer = ( [+\-]? digit+ ) ;
+	
+	# Reads an integer and executes A on encountering whitespace
+	# main := integer %A whitespace;
+	
+	# A float requires at least one decimal digit and a point, which can lead or trail, with an optional sign in front
+	float = [+\-]? (( digit* '.' digit+ ) | ( digit+ '.' digit* )) ;
+	
+	# Reads a float and executes B on encountering whitespace or a comment
+	# main := float %B ( whitespace | comment );
+	
+	# Executes A after reading an integer and B after reading a float
+	number = ( integer %A | float %B );
+	
+	# Recognizes a number after encountering whitespace
+	# main := number whitespace;
+	
+	#******************************************************************************************************************
+	
+	literalString := '(' any* ')';
+	
+	# main:= literalString;
+
+	#******************************************************************************************************************
+	
+	# Executes B on encountering each hexadecimal digit, executing A when all hex digits have been read
+	hexString := ('<' (whitespace? (xdigit >B))* (whitespace? '>')) @A;
+	
+	# Recognizes a hexidecimal string
+	# main:= hexString;
+	
+	action C {}
+	
+	# Executes B after reading a # escape sequence, and executes A after reading the name
+	name := ('/' ( (regular - '#') | ('#' xdigit{2} @B) )*) %C;
+	
+	# Recognizes a name
+	# main := name whitespace;
+	
+	# object2 = hexString ;
+	
+	array := '[' whitespace?	(   ('(' >{fcall literalString;}) |
+									('<' >{fcall hexString;}) |
+									('[' >{fcall array;}) |
+									('/' >{fcall name;}) |
+									(']' >{fret;})  );
+	
+	main := any >{ fhold; fcall array;};
+	
+	main()
+	{
+		void *buf = (void *)[fileData bytes];
+		int buffer_size = [fileData length];
+		struct Parse_Page page_parser;
+		
+		Parse_Page_init( &page_parser );
+		Parse_Page_execute( &page_parser, buf, buffer_size );
+		
+		if ( page_parser.identLen > 0 )
+			return atoi( (const char *)&page_parser.identBuf );
+		else
+		{
+			NSLog(@"Ampede error: ");
+			return 0;
+		}
+	}

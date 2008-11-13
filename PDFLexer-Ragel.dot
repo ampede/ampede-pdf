@@ -1,0 +1,24 @@
+digraph PDFParsingMachine {
+	rankdir=LR;
+	node [ shape = point ];
+	ENTRY;
+	eof_3;
+	eof_4;
+	node [ shape = circle, height = 0.2 ];
+	node [ fixedsize = true, height = 0.65, shape = doublecircle ];
+	3;
+	4;
+	node [ shape = circle ];
+	0 -> 1 [ label = "43, 45 / setupNum, bufNum" ];
+	0 -> 2 [ label = "46 / setupNum, bufNum" ];
+	0 -> 4 [ label = "48..57 / setupNum, bufNum" ];
+	1 -> 2 [ label = "46 / bufNum" ];
+	1 -> 4 [ label = "48..57 / bufNum" ];
+	2 -> 3 [ label = "48..57 / bufNum" ];
+	3 -> 3 [ label = "48..57 / bufNum" ];
+	4 -> 3 [ label = "46 / bufNum" ];
+	4 -> 4 [ label = "48..57 / bufNum" ];
+	ENTRY -> 0 [ label = "START" ];
+	3 -> eof_3 [ label = "EOF / number" ];
+	4 -> eof_4 [ label = "EOF / number" ];
+}

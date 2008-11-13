@@ -1,0 +1,69 @@
+{
+    IBClasses = (
+        {CLASS = EFTextField; LANGUAGE = ObjC; SUPERCLASS = NSTextField; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = PDFBoxView; LANGUAGE = ObjC; SUPERCLASS = PDFView; }, 
+        {
+            CLASS = PDFView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {wc = SequenceWindowController; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {choosePDF = id; }; 
+            CLASS = SequenceDocument; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            ACTIONS = {
+                choosePDF = id; 
+                launchColorSyncUtility = id; 
+                launchInfoWebPage = id; 
+                launchLicensing = id; 
+                launchPurchaseWebPage = id; 
+                openHelp = id; 
+                openInDefaultViewer = id; 
+                reconnect = id; 
+            }; 
+            CLASS = SequenceWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                colorsyncPane = NSView; 
+                fileInfoPane = NSView; 
+                licensingPane = NSView; 
+                pageView = PDFView; 
+                pdfPane = NSView; 
+                preferencesPane = NSView; 
+                quartzPane = NSView; 
+                softwareUpdatePane = NSView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {
+                closeFeedbackWindow = id; 
+                openURL = id; 
+                orderFrontFeedbackWindow = id; 
+                sendFeedback = id; 
+                sendFeedbackButtonAction = id; 
+            }; 
+            CLASS = UKFeedbackProvider; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                feedbackWindow = NSWindow; 
+                messageText = NSTextView; 
+                subjectField = NSComboBox; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {checkForUpdates = id; takeBoolFromObject = id; }; 
+            CLASS = UKUpdateChecker; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {prefsButton = NSButton; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

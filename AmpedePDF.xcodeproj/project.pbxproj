@@ -1,0 +1,1517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		782894F106C7BA92001F23C6 /* PDFBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7892DA8306C6C88C00678F21 /* PDFBoxView.m */; };
+		782894F206C7BA92001F23C6 /* PDFBoxView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7892DA8206C6C88C00678F21 /* PDFBoxView.h */; };
+		782894F306C7BA93001F23C6 /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEAE1A06AC896400447BC8 /* PDFView.m */; };
+		782894F406C7BA93001F23C6 /* PDFView.h in Headers */ = {isa = PBXBuildFile; fileRef = 78FEAE1906AC896400447BC8 /* PDFView.h */; };
+		782894F506C7BA94001F23C6 /* AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA03B206B489F200F9B47C /* AboutView.m */; };
+		782894F606C7BA94001F23C6 /* AboutView.h in Headers */ = {isa = PBXBuildFile; fileRef = 78AA03B106B489F200F9B47C /* AboutView.h */; };
+		782894F706C7BA95001F23C6 /* SequenceWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784C305B06B8B5EA00AFBA4F /* SequenceWindowController.m */; };
+		782894F806C7BA96001F23C6 /* SequenceWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 784C305A06B8B5EA00AFBA4F /* SequenceWindowController.h */; };
+		782894F906C7BA96001F23C6 /* SequenceDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA043906B49F5900F9B47C /* SequenceDocument.m */; };
+		782894FA06C7BA97001F23C6 /* SequenceDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 78AA043806B49F5900F9B47C /* SequenceDocument.h */; };
+		782894FB06C7BA98001F23C6 /* AmpedeDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7834A98306BE18D200AAD966 /* AmpedeDocument.m */; };
+		782894FC06C7BA99001F23C6 /* AmpedeDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 7834A98206BE18D200AAD966 /* AmpedeDocument.h */; };
+		782894FD06C7BA99001F23C6 /* DrawingEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 78839CFC06BBAB27007ED111 /* DrawingEnums.h */; };
+		782894FE06C7BA9A001F23C6 /* EFTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890A21106C2616900944F20 /* EFTextField.m */; };
+		782894FF06C7BA9A001F23C6 /* EFTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890A21006C2616900944F20 /* EFTextField.h */; };
+		7828950006C7BAB5001F23C6 /* UKUpdateChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7892DB9306C6F48100678F21 /* UKUpdateChecker.h */; };
+		7828950106C7BAB6001F23C6 /* UKUpdateChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7892DB9406C6F48100678F21 /* UKUpdateChecker.m */; };
+		7828950206C7BAB8001F23C6 /* UKUpdateChecker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7892DB9B06C6F4A200678F21 /* UKUpdateChecker.strings */; };
+		7828950306C7BABA001F23C6 /* UKKQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7834AE7806BE805300AAD966 /* UKKQueue.h */; };
+		7828950406C7BABB001F23C6 /* UKKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7834AE7906BE805300AAD966 /* UKKQueue.m */; };
+		7828957506C7BCE8001F23C6 /* UKFeedbackProvider.nib in Resources */ = {isa = PBXBuildFile; fileRef = 7892DB9906C6F4A200678F21 /* UKFeedbackProvider.nib */; };
+		7828957606C7BCEF001F23C6 /* SequenceDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 784C305206B8B4B600AFBA4F /* SequenceDocument.nib */; };
+		7828957706C7BD1E001F23C6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D15AC360486D014006FF6A4 /* Info.plist */; };
+		7828957806C7BD22001F23C6 /* about.tif in Resources */ = {isa = PBXBuildFile; fileRef = 78AA03DD06B48BA400F9B47C /* about.tif */; };
+		7828957906C7BD23001F23C6 /* default.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 78AA05F006B5547400F9B47C /* default.pdf */; };
+		7828957B06C7BD24001F23C6 /* com.ampede.ef.sequence.toolbar.quartz.png in Resources */ = {isa = PBXBuildFile; fileRef = 784F589106B900F300470FA8 /* com.ampede.ef.sequence.toolbar.quartz.png */; };
+		7828957C06C7BD24001F23C6 /* com.ampede.ef.sequence.toolbar.software_update.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 784F58B706B9048900470FA8 /* com.ampede.ef.sequence.toolbar.software_update.tiff */; };
+		7828957D06C7BD25001F23C6 /* com.ampede.ef.sequence.toolbar.licensing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 78839A7D06BB529F007ED111 /* com.ampede.ef.sequence.toolbar.licensing.gif */; };
+		7828957E06C7BD25001F23C6 /* com.ampede.ef.sequence.toolbar.colorsync.png in Resources */ = {isa = PBXBuildFile; fileRef = 78839A8206BB5388007ED111 /* com.ampede.ef.sequence.toolbar.colorsync.png */; };
+		7828957F06C7BD26001F23C6 /* com.ampede.ef.sequence.toolbar.preferences.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 78950F9406C3C29C00ABF031 /* com.ampede.ef.sequence.toolbar.preferences.tiff */; };
+		7828958006C7BD28001F23C6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7892DBA406C6F57600678F21 /* Localizable.strings */; };
+		7828958106C7BD29001F23C6 /* MacPAD.url in Resources */ = {isa = PBXBuildFile; fileRef = 7892DBAE06C6F6FD00678F21 /* MacPAD.url */; };
+		7828958206C7BD32001F23C6 /* UKUpdateChecker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7892DB9B06C6F4A200678F21 /* UKUpdateChecker.strings */; };
+		7834A98406BE18D200AAD966 /* AmpedeDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 7834A98206BE18D200AAD966 /* AmpedeDocument.h */; };
+		7834A98506BE18D200AAD966 /* AmpedeDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7834A98306BE18D200AAD966 /* AmpedeDocument.m */; };
+		7834AE7A06BE805300AAD966 /* UKKQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7834AE7806BE805300AAD966 /* UKKQueue.h */; };
+		7834AE7B06BE805300AAD966 /* UKKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7834AE7906BE805300AAD966 /* UKKQueue.m */; };
+		7845FAD606D0A0A3002A16E3 /* com.ampede.ef.sequence.toolbar.file_info.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7845FAD506D0A0A3002A16E3 /* com.ampede.ef.sequence.toolbar.file_info.tiff */; };
+		7845FAD706D0A0A3002A16E3 /* com.ampede.ef.sequence.toolbar.file_info.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7845FAD506D0A0A3002A16E3 /* com.ampede.ef.sequence.toolbar.file_info.tiff */; };
+		7845FAD806D0A0AD002A16E3 /* com.ampede.ef.sequence.toolbar.pdf.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 78FD540706C9E1B7003D9128 /* com.ampede.ef.sequence.toolbar.pdf.tiff */; };
+		784C305306B8B4B600AFBA4F /* SequenceDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 784C305206B8B4B600AFBA4F /* SequenceDocument.nib */; };
+		784C305C06B8B5EA00AFBA4F /* SequenceWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 784C305A06B8B5EA00AFBA4F /* SequenceWindowController.h */; };
+		784C305D06B8B5EA00AFBA4F /* SequenceWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784C305B06B8B5EA00AFBA4F /* SequenceWindowController.m */; };
+		784F589206B900F300470FA8 /* com.ampede.ef.sequence.toolbar.quartz.png in Resources */ = {isa = PBXBuildFile; fileRef = 784F589106B900F300470FA8 /* com.ampede.ef.sequence.toolbar.quartz.png */; };
+		784F58B806B9048900470FA8 /* com.ampede.ef.sequence.toolbar.software_update.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 784F58B706B9048900470FA8 /* com.ampede.ef.sequence.toolbar.software_update.tiff */; };
+		78517B6906A3A146008CD01C /* LicenseControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78517B6806A3A146008CD01C /* LicenseControl.framework */; };
+		78517B6A06A3A146008CD01C /* LicenseControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78517B6806A3A146008CD01C /* LicenseControl.framework */; };
+		78517B7906A46020008CD01C /* LicenseControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 78517B6806A3A146008CD01C /* LicenseControl.framework */; };
+		787C7D0406A2292100CE1FE6 /* Ampede.h in Headers */ = {isa = PBXBuildFile; fileRef = 787C7D0206A2292100CE1FE6 /* Ampede.h */; };
+		787C7D0506A2292100CE1FE6 /* Ampede.m in Sources */ = {isa = PBXBuildFile; fileRef = 787C7D0306A2292100CE1FE6 /* Ampede.m */; };
+		787C7D8C06A365BE00CE1FE6 /* Ampede.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* Ampede.nib */; };
+		787C7D8E06A365BE00CE1FE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		787C7D9406A365BE00CE1FE6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		787C7DBA06A3676A00CE1FE6 /* Ampede.m in Sources */ = {isa = PBXBuildFile; fileRef = 787C7D0306A2292100CE1FE6 /* Ampede.m */; };
+		787C7DC006A3676B00CE1FE6 /* Ampede.h in Headers */ = {isa = PBXBuildFile; fileRef = 787C7D0206A2292100CE1FE6 /* Ampede.h */; };
+		787C7DD106A3676E00CE1FE6 /* AmpedeBundle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 787C7DAE06A3669700CE1FE6 /* AmpedeBundle-Info.plist */; };
+		787C7DE006A3678D00CE1FE6 /* Ampede_Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 32DBCF750370BD2300C91783 /* Ampede_Prefix.pch */; };
+		787C7E1B06A3687300CE1FE6 /* main_LC.m in Sources */ = {isa = PBXBuildFile; fileRef = 787C7E0F06A3686D00CE1FE6 /* main_LC.m */; };
+		787C7E4906A368F400CE1FE6 /* AmpedeBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 787C7DAD06A3669700CE1FE6 /* AmpedeBundle.bundle */; };
+		787C7E6C06A36A0A00CE1FE6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		787C7E7106A36A0B00CE1FE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
+		787C7EE206A36A0B00CE1FE6 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */; };
+		787C7F8606A36A8400CE1FE6 /* LCmain.m in Sources */ = {isa = PBXBuildFile; fileRef = 787C7F8506A36A8400CE1FE6 /* LCmain.m */; };
+		787C7F9E06A371D600CE1FE6 /* LicenseAgreement.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 787C7F9D06A371D600CE1FE6 /* LicenseAgreement.rtfd */; };
+		78839A7E06BB529F007ED111 /* com.ampede.ef.sequence.toolbar.licensing.gif in Resources */ = {isa = PBXBuildFile; fileRef = 78839A7D06BB529F007ED111 /* com.ampede.ef.sequence.toolbar.licensing.gif */; };
+		78839A8306BB5388007ED111 /* com.ampede.ef.sequence.toolbar.colorsync.png in Resources */ = {isa = PBXBuildFile; fileRef = 78839A8206BB5388007ED111 /* com.ampede.ef.sequence.toolbar.colorsync.png */; };
+		78839CFD06BBAB27007ED111 /* DrawingEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 78839CFC06BBAB27007ED111 /* DrawingEnums.h */; };
+		7890A21306C2616900944F20 /* EFTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890A21106C2616900944F20 /* EFTextField.m */; };
+		7892DA8406C6C88C00678F21 /* PDFBoxView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7892DA8206C6C88C00678F21 /* PDFBoxView.h */; };
+		7892DA8506C6C88C00678F21 /* PDFBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7892DA8306C6C88C00678F21 /* PDFBoxView.m */; };
+		7892DB9706C6F48100678F21 /* UKUpdateChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7892DB9306C6F48100678F21 /* UKUpdateChecker.h */; };
+		7892DB9806C6F48100678F21 /* UKUpdateChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7892DB9406C6F48100678F21 /* UKUpdateChecker.m */; };
+		7892DB9E06C6F4A200678F21 /* UKUpdateChecker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7892DB9B06C6F4A200678F21 /* UKUpdateChecker.strings */; };
+		7892DBA506C6F57600678F21 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7892DBA406C6F57600678F21 /* Localizable.strings */; };
+		7892DBAF06C6F6FD00678F21 /* MacPAD.url in Resources */ = {isa = PBXBuildFile; fileRef = 7892DBAE06C6F6FD00678F21 /* MacPAD.url */; };
+		78950F9506C3C29C00ABF031 /* com.ampede.ef.sequence.toolbar.preferences.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 78950F9406C3C29C00ABF031 /* com.ampede.ef.sequence.toolbar.preferences.tiff */; };
+		7895107206C3CE5500ABF031 /* EFTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890A21006C2616900944F20 /* EFTextField.h */; };
+		789B6EF806CDA5D500578EAE /* Final Cut Pro-plugin.icns in Resources */ = {isa = PBXBuildFile; fileRef = 789B6EF706CDA5D500578EAE /* Final Cut Pro-plugin.icns */; };
+		789B6EF906CDA5D500578EAE /* Final Cut Pro-plugin.icns in Resources */ = {isa = PBXBuildFile; fileRef = 789B6EF706CDA5D500578EAE /* Final Cut Pro-plugin.icns */; };
+		78AA03B306B489F200F9B47C /* AboutView.h in Headers */ = {isa = PBXBuildFile; fileRef = 78AA03B106B489F200F9B47C /* AboutView.h */; };
+		78AA03B406B489F200F9B47C /* AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA03B206B489F200F9B47C /* AboutView.m */; };
+		78AA03DE06B48BA400F9B47C /* about.tif in Resources */ = {isa = PBXBuildFile; fileRef = 78AA03DD06B48BA400F9B47C /* about.tif */; };
+		78AA043A06B49F5900F9B47C /* SequenceDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 78AA043806B49F5900F9B47C /* SequenceDocument.h */; };
+		78AA043B06B49F5900F9B47C /* SequenceDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA043906B49F5900F9B47C /* SequenceDocument.m */; };
+		78AA05F106B5547400F9B47C /* default.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 78AA05F006B5547400F9B47C /* default.pdf */; };
+		78FD540806C9E1B7003D9128 /* com.ampede.ef.sequence.toolbar.pdf.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 78FD540706C9E1B7003D9128 /* com.ampede.ef.sequence.toolbar.pdf.tiff */; };
+		78FEADE806AC82B400447BC8 /* PDFDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 78FEADE706AC82B400447BC8 /* PDFDocument.nib */; };
+		78FEAE1B06AC896400447BC8 /* PDFView.h in Headers */ = {isa = PBXBuildFile; fileRef = 78FEAE1906AC896400447BC8 /* PDFView.h */; };
+		78FEAE1C06AC896400447BC8 /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEAE1A06AC896400447BC8 /* PDFView.m */; };
+		8D15AC290486D014006FF6A4 /* Ampede_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCF750370BD2300C91783 /* Ampede_Prefix.pch */; };
+		8D15AC2D0486D014006FF6A4 /* Ampede.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* Ampede.nib */; };
+		8D15AC2E0486D014006FF6A4 /* PDFLayerViewer.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* PDFLayerViewer.nib */; };
+		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		8E3C2F4F083E9E8B00FBAF41 /* LicenseControl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 78517B6806A3A146008CD01C /* LicenseControl.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		782DA4EE06A4E8E1000DC550 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.rl";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).h",
+			);
+			script = "echo \"*.rli file processed\"\n/usr/local/bin/ragel $(INPUT_FILE_BASE).rl -c -G2 -o $(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).h";
+		};
+		78F71E0606AB0F8E00F0CF05 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.rli";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).m\n//  PDFLexer-Ragel.rl\n//  Ampede\n//\n//  Created by Eric Ocean on Thu Jul 15 2004.\n//  Copyright (c) 2004 Eric Daniel Ocean. All rights reserved.\n//\n\n#import <Cocoa/Cocoa.h>\n#import \"PDFToken.h\"\n#import \"PDFBoolean.h\"\n// #import \"PDFObjectRef.h\"\n\n\n// unsigned char\n// hexToUChar( unsigned char hex1, unsigned char hex2 );\n\nunsigned char\nhexToUChar( unsigned char hex1, unsigned char hex2 )\n{\n\t// hex1 and hex2 are guaranteed to be [0-9a-fA-Z]\n\tunsigned char hexByte = 0;\n\t\n\tNSLog(@\"The hexToUChar() function in %s, line %d needs to be tested.\", __FILE__, __LINE__ );\n\t\n\tif ( hex1 < 'A' ) hexByte += ( hex1 - 48 ) << 4;\t\t// hex is an ASCII decimal number\n\telse if ( hex1 < 'a' ) hexByte += ( hex1 - 55 ) << 4;\t// hex is an UPPERCASE ASCII alpha\n\telse hexByte += ( hex1 - 87) << 4;\t\t\t\t\t\t// hex is a lowercase ASCII alpha\n\n\tif ( hex1 < 'A' ) hexByte += ( hex2 - 48 );\t\t\t// hex is an ASCII decimal number\n\telse if ( hex1 < 'a' ) hexByte += ( hex2 - 55 );\t// hex is an UPPERCASE ASCII alpha\n\telse hexByte += ( hex2 - 87);\t\t\t\t\t\t// hex is a lowercase ASCII alpha\n\t\n\treturn hexByte;\n}\n\nunsigned char\noctalToUChar( unsigned char octal1, unsigned char octal2, unsigned char octal3 );\n\nunsigned char\noctalToUChar( unsigned char octal1, unsigned char octal2, unsigned char octal3 )\n{\n\t// octal1, octal2, and octal3 are guaranteed to be [0-7]\n\t// the resulting conversion may overflow, though, in which case the value should is clamped to 255\n\tunsigned int octalInt = 0; // won't overflow\n\t\n\tNSLog(@\"The octalToUChar() function in %s, line %d needs to be tested.\", __FILE__, __LINE__ );\n\t\n\toctalInt = ((octal1 - 48) * 64) + ((octal2 - 48) * 8) + (octal3 - 48);\n\t\n\tif ( octalInt > 255 ) return 255;\n\telse return octalInt;\n}\n\n@class PDFLexer;\n\n#define IDENT_BUFLEN 256\n\n%% PDFParsingMachine\n\talphtype unsigned char;\n\t\n\t#*************************************************************************************************************#\n\t# global information #\n\t\n\t# Each machine that returns an object is setup to do so upon _leaving_ the machine.\n\t# The diagrams were generated from the machine (only), so you'll see that transition on reaching EOF\n\t# In the final machine used to parse the PDF, it will happen on every round of the Kleene star\n\t#\n\t# None of the machines repeat by themselves; they are all one-shot machines.\n\t\n\tstruct {\n\t\tPDFLexer *self;\n\t};\n\t\n\t#*************************************************************************************************************#\n\t# the whitespace, eol, delimiter, regular, and comment machines #\n\t\n\t# whitespace in a PDF file includes the NULL character, and consecutive whitespace is treated as one\n\twhitespace = /[\\t\\f\\n\\r\\0 ]/ ;\n\n\teol = /[\\r\\n]/ | '\\r\\n' ;\n\t\n\tdelimiter = [()<>\\[\\]{}/%] ;\n\t\n\tregular = any - ( whitespace | delimiter ) ;\n\n\t# The priority bump on the terminator of the comments brings us out of the extend* which matches everything.\n\tcomment = '%' . extend* $0 . eol @1 ;\n\t\n\t#*************************************************************************************************************#\n\t# the boolean machine #\n\t\n\tstruct {\n\t\tBOOL boolVal;\n\t};\n\t\n\taction false {\n\t\tfsm->boolVal = NO;\n\t}\n\t\n\taction true {\n\t\tfsm->boolVal = YES;\n\t}\n\t\n\taction boolean {\n\t\t[fsm->self addToken:[PDFBoolean booleanWithBool:fsm->boolVal]];\n\t\treturn 2;\n\t}\n\t\n\t# Boolean objects can be used as the values of array elements and dictionary entries, and\n\t# can also occur in PostScript calculator functions as the results of boolean and\n\t# relational operators and as operands to the conditional operators if and ifelse\n\tboolean = (( 'true' >true ) | ( 'false' >false )) %boolean ;\n\t\n\t#*************************************************************************************************************#\n\t# the number machine #\n\t\n\tstruct {\n\t\tNSMutableData *numChars;\n\t};\n\t\n\tinit {\n\t\tif ( fsm->numChars ) [ fsm->numChars release];\n\t}\n\t\n\taction bufNum {\n\t\tif ( !fsm->numChars ) fsm->numChars = [[NSMutableData alloc] initWithCapacity:10];\n\t\t[fsm->numChars appendBytes:&fc length:1];\n\t}\n\t\n\taction number {\n\t\t[fsm->self addToken:\n\t\t\t\t\t\t\t[NSDecimalNumber decimalNumberWithString:\n\t\t\t\t\t\t\t\t\t\t\t\t\t[NSString\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tstringWithCharacters:(const unichar *)[fsm->numChars bytes]\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tlength:[fsm->numChars length]]]];\n\t\t[fsm->numChars release]; fsm->numChars = nil;\n#warning +[NSDecimalNumber decimalNumberWithString:] needs to be tested to insure that it can handle the full range of number possibilities in the PDF spec.\n\t\treturn 2;\n\t}\n\t\n\tinteger = [+\\-]? digit+ ;\n\t\n\t# A float is at least one decimal digit and a point, which can lead or trail, with an optional sign in front\n\tfloat = [+\\-]? (( digit* '.' digit+ ) | ( digit+ '.' digit* )) ;\n\t\n\t# Executes A on entering the machine and B upon leaving.\n\tnumber = ( integer | float ) $bufNum %number;\n\t\n\t#*************************************************************************************************************#\n\t# the hexString machine #\n\t\n\tstruct {\n\t\tNSMutableData *hexChars;\n\t\tunsigned char hexByte;\n\t\tunsigned char hexChar1;\n\t\tunsigned char hexChar2;\n\t\tBOOL shouldSetFirstHexChar;\n\t};\n\t\n\taction setupHex {\n\t\tif ( fsm->hexChars ) [ fsm->hexChars release];\n\t\tfsm->hexChars = [[NSMutableData alloc] initWithCapacity:512];\n\t\tfsm->hexByte = 0;\n\t\tfsm->hexChar1 = 0;\n\t\tfsm->hexChar2 = 0;\n\t\tfsm->shouldSetFirstHexChar = YES;\n\t}\n\t\n\taction bufHex {\n\t\t// we only add the byte we're building after every two hex characters\n\t\tif ( fsm->shouldSetFirstHexChar )\n\t\t{\n\t\t\tfsm->hexChar1 = fc;\n\t\t\tfsm->shouldSetFirstHexChar = NO;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tfsm->hexChar1 = fc;\n\t\t\tfsm->hexByte = hexToUChar( fsm->hexChar1 , fsm->hexChar2 );\n\t\t\t[fsm->hexChars appendBytes:&fsm->hexByte length:1];\n\t\t\tfsm->shouldSetFirstHexChar = YES;\n\t\t\tfsm->hexByte = 0; // reinitialize the byte\n\t\t\tfsm->hexChar1 = 0; // reinitialize the first hex char\n\t\t\tfsm->hexChar2 = 0; // reinitialize the second hex char\n\t\t}\n\t}\n\t\n\taction hexString {\n\t\t// add the final byte to the data if it wasn't already added (because only one of the two hex chars was provided)\n\t\tif ( fsm->shouldSetFirstHexChar == NO ) fsm->hexByte = hexToUChar( fsm->hexChar1 , fsm->hexChar2 );\n\t\t[fsm->hexChars appendBytes:&fsm->hexByte length:1];\n\t\t\n\t\t[fsm->self addToken:fsm->hexChars];\n\t\t[fsm->hexChars release]; fsm->hexChars = nil;\n\t}\n\t\n\t# Executes setupHex on entering the machine, bufHex on encountering each hex digit, and hexString when finished.\n\t# The spec states, indirectly, that comments don't occur within strings. I'm assuming that includes hex strings.\n\thexString = ('<' >setupHex . (whitespace? (xdigit >bufHex))* (whitespace? '>')) %hexString;\n\n\t#*************************************************************************************************************#\n\t# the name machine #\n\n\tstruct {\n\t\tNSMutableData *nameChars;\n\t\tunsigned char nameHexByte;\n\t\tunsigned char nameHexChar1;\n\t};\n\t\n\taction setupName {\n\t\tif ( fsm->nameChars ) [fsm->nameChars release];\n\t\tfsm->nameChars = [[NSMutableData alloc] initWithCapacity:64];\n\t\tfsm->nameHexByte = 0;\n\t\tfsm->nameHexChar1 = 0;\n\t}\n\t\n\taction bufNameChar {\n\t\t[fsm->nameChars appendBytes:&fc length:1];\n\t}\n\t\n\taction bufFirstHexChar {\n\t\tfsm->nameHexChar1 = fc;\n\t}\n\t\n\taction bufSecondHexCharNameChar {\n\t\tfsm->nameHexByte = hexToUChar( fsm->nameHexChar1 , fc ); // fc is the second hex char\n\t\t\n\t\t[fsm->nameChars appendBytes:&fsm->nameHexByte length:1];\n\t\t\n\t\tfsm->nameHexByte = 0; // reinitialize the byte\n\t\tfsm->nameHexChar1 = 0; // reinitialize the first hex char\n\t}\n\n\taction name {\n\t\t[fsm->self addToken:[NSString\n\t\t\t\t\t\t\t\tstringWithCharacters:(const unichar *)[fsm->nameChars bytes]\n\t\t\t\t\t\t\t\tlength:[fsm->nameChars length]]];\n\t\t\t\t\t\t\t\t\n\t\t[fsm->nameChars release]; fsm->nameChars = nil;\n\t}\n\t\n\t# This is a fairly complicated machine.\n\t# On entrance, the machine executes setupName,\n\t# then after each character of the name it executes bufNameChar,\n\t# unless the character is the '#\" escape character, in which case it executes nothing.\n\t# After reading the first hex character after the escape code it executes bufFirstHexChar,\n\t# and after the second hex character it executes bufSecondHexCharNameChar.\n\t# Finally, when the machine leaves, it executes name.\n\t# Note that a name can be zero length.\n\tname = ( '/' >setupName . ( ( regular - '#' ) $bufNameChar | ( '#' . ( xdigit >bufFirstHexChar . xdigit @bufSecondHexCharNameChar ) ) )* ) %name;\n\n\t#*************************************************************************************************************#\n\t# the literalString machine #\n\t\n\tstruct {\n\t\tNSMutableData *literalChars;\n\t\tunsigned char charBuf;\n\t\tunsigned char octalByte;\n\t\tunsigned char octal1;\n\t\tunsigned char octal2;\n\t\tunsigned char octal3;\n\t\tint octalCharToBuf;\n\t\tunsigned char appendByte;\n\t};\n\t\n\taction lineFeed {\n\t\tfsm->appendByte = '\\n';\n\t\t[fsm->literalChars appendBytes:&fsm->appendByte length:1];\n\t}\n\t\n\taction carriageReturn {\n\t\tfsm->appendByte = '\\r';\n\t\t[fsm->literalChars appendBytes:&fsm->appendByte length:1];\n\t}\n\t\n\taction horizontalTab {\n\t\tfsm->appendByte = '\\t';\n\t\t[fsm->literalChars appendBytes:&fsm->appendByte length:1];\n\t}\n\t\n\taction backspace {\n\t\tfsm->appendByte = 8;\n\t\t[fsm->literalChars appendBytes:&fsm->appendByte length:1];\n\t}\n\t\n\taction formFeed {\n\t\tfsm->appendByte = '\\f';\n\t\t[fsm->literalChars appendBytes:&fsm->appendByte length:1];\n\t}\n\t\n\taction leftParen {\n\t\tfsm->appendByte = '(';\n\t\t[fsm->literalChars appendBytes:&fsm->appendByte length:1];\n\t}\n\t\n\taction rightParen {\n\t\tfsm->appendByte = ')';\n\t\t[fsm->literalChars appendBytes:&fsm->appendByte length:1];\n\t}\n\t\n\taction backslash {\n\t\tfsm->appendByte = '\\\\';\n\t\t[fsm->literalChars appendBytes:&fsm->appendByte length:1];\n\t}\n\t\n\taction beginOctal {\n\t\tfsm->octalByte = 0;\n\t\tfsm->octal1 = 0;\n\t\tfsm->octal2 = 0;\n\t\tfsm->octal3 = 0;\n\t\tfsm->octalCharToBuf = 1;\n\t}\n\t\n\taction bufOctal {\n\t\tswitch ( fsm->octalCharToBuf ) {\n\t\tcase 1: fsm->octal1 = fc; fsm->octalCharToBuf = 2; break;\n\t\tcase 2: fsm->octal2 = fc; fsm->octalCharToBuf = 3; break;\n\t\tcase 3: fsm->octal3 = fc; fsm->octalCharToBuf = 4; break;\n\t\t// case 4 never occurs; see state machine for details\n\t\t}\n\t}\n\t\n\taction octal {\n\t\tswitch ( fsm->octalCharToBuf ) {\n\t\t// case 1 never occurs; see state machine for details\n\t\tcase 2: fsm->octalByte = octalToUChar( '0', '0', fsm->octal1 ); break;\n\t\tcase 3: fsm->octalByte = octalToUChar( '0', fsm->octal1, fsm->octal2 ); break;\n\t\tcase 4: fsm->octalByte = octalToUChar( fsm->octal1, fsm->octal2, fsm->octal3 ); break;\n\t\t}\n\t\t\n\t\t[fsm->literalChars appendBytes:&fsm->octalByte length:1];\n\t}\n\t\n\taction bufLiteralChar {\n\t\tfsm->charBuf = fc;\n\t}\n\t\n\taction nonEscapeChars {\n\t\t// increase the left parenthesis count whenever we encounter one\n\t\t// only escaped left parenthesis aren't counted\n\t\tif ( fsm->charBuf == '(' ) fsm->leftParenCount += 1;\n\t\t\n\t\t[fsm->literalChars appendBytes:&fsm->charBuf length:1];\n\t}\n\n\tstruct {\n\t\tint leftParenCount;\n\t};\n\t\n\taction beginLiteralString {\n\t\tif ( fsm->literalChars ) [ fsm->literalChars release];\n\t\tfsm->literalChars = [[NSMutableData alloc] initWithCapacity:512];\n\t\tfsm->leftParenCount = 1;\n\t}\n\t\n\taction evaluateRightParenthesis {\n\t\t// this is not called for escaped right parenthesis, which do not count towards the parenthesis matching\n\t\n\t\tfsm->leftParenCount -= 1; // match our left parenthesis\n\t\t\n\t\t// when all the left parenthesis have been matched with their right parenthesis, we're done\n\t\tif ( fsm->leftParenCount != 0 )  fgoto nextChar; // we're not finished\n\t}\n\t\n\taction literalString {\n\t\t[fsm->self addToken:fsm->literalChars];\n\t\t\t\t\t\t\t\t\n\t\t[fsm->literalChars release]; fsm->literalChars = nil;\n\t}\n\n\n\tlp = '(';\n\trp = ')';\n\t\n\toctal = [0-7]; # I think this is right, but I'm not sure\n\t\n\t# 92 is the number for the '\\' character\n\tescape = 92 . ( ([n] %lineFeed) | ([r] %carriageReturn) | ([t] %horizontalTab) | ([b] %backspace) | ([f] %formFeed) | ([(] %leftParen) | ([)] %rightParen) | (92 %backslash) | (octal{1,3} >beginOctal $bufOctal %octal) | eol );\n\t\n\tnonEscapeChars = ( any - (rp|92) ) $bufLiteralChar %nonEscapeChars ;\n\t\n\trecordChar = ( nonEscapeChars | escape );\n\t\n\t# This is a fairly subtle machine. If you look at the diagram, you'll see that I labeled state 1 \"nextChar\".\n\t# Literal strings in PDF allow for unescaped, matched parenthesis. Unmatched parenthesis must be escaped.\n\t# There are also a plethora of escape codes and escape sequences, along with an eol backslash continuation character.\n\tliteralString = (( ( (lp $0 >beginLiteralString) | ( lp . ( nextChar: recordChar** ) ))) . ( rp >1 >evaluateRightParenthesis ) ) %literalString ;\n\t\n\t#*************************************************************************************************************#\n\t# the array machines #\n\t\n\taction beginArray {\n\t\t[fsm->self addToken:[PDFToken beginArray]];\n\t}\n\t\n\taction endArray {\n\t\t[fsm->self addToken:[PDFToken endArray]];\n\t}\n\t\n\tbeginArray = '[' %beginArray ;\n\tendArray = ']' %endArray ;\n\t\n\t# The remainder of the parsing logic is handled by an array parser.\n\t\n\t#*************************************************************************************************************#\n\t# the dictionary and pdfNull machines #\n\t\n\taction beginDict {\n\t\t[fsm->self addToken:[PDFToken beginDict]];\n\t}\n\taction endDict {\n\t\t[fsm->self addToken:[PDFToken endDict]];\n\t}\n\t\n\tbeginDict = '<<' %beginDict ;\n\tendDict = '>>' %endDict ;\n\t\n\taction pdfNull {\n\t\t[fsm->self addToken:[PDFToken pdfNull]];\n\t}\n\t\n\tpdfNull = 'null' %pdfNull;\n\t\n\t# The remainder of the parsing logic is handled by a dictionary parser.\n\t\n\t#*************************************************************************************************************#\n\t# the stream machine #\n\t\n\t# This machine only retrieves the raw stream data; it does not parse that data in any way.\n\t# It's a little odd, in that it adds two tokens instead of the usual one.\n\t\n\tstruct {\n\t\tNSMutableData *streamBytes;\n\t};\n\t\n\taction beginStream {\n\t\t[fsm->self addToken:[PDFToken beginStream]];\n\t\tif ( fsm->streamBytes ) [ fsm->streamBytes release];\n\t\tfsm->streamBytes = [[NSMutableData alloc] initWithCapacity:512];\n\t}\n\t\n\taction bufStream {\n\t\t[fsm->streamBytes appendBytes:&fc length:1];\n\n\t} \n\t\n\taction stream {\n\t\t// bufStream records 8 bytes more data then necessary: endstrea\n\t\t[fsm->self addToken:[fsm->streamBytes subdataWithRange:NSMakeRange( 0, ([fsm->streamBytes length] - 8) )]];\n\t\t[fsm->streamBytes release]; fsm->streamBytes = nil;\n\t}\n\t\t\n\tstream = ( ('stream' >beginStream) . ( [\\n] | \"\\r\\n\" ) . any* $0 $bufStream . (( eol . 'endstream') @1) ) %stream;\n\t\n\t# The remainder of the parsing logic is handled by a stream parser.\n\t# It expects to see an indirect object, then a dictionary, then a beginStream token, and then an NSData, followed\n\t# by and endObject token. (There is no endStream token, since it's redundant.)\n\n\t#*************************************************************************************************************#\n\t# the indirectObject machines #\n\t\n\taction beginIndirectObject {\n\t\t[fsm->self addToken:[PDFToken beginIndirectObject]];\n\t}\n\taction endIndirectObject {\n\t\t[fsm->self addToken:[PDFToken endIndirectObject]];\n\t}\n\t\t\n\tbeginIndirectObject = 'obj' %beginIndirectObject ;\n\tendIndirectObject = 'endobj' %endIndirectObject ;\n\t\n\t# The remainder of the parsing logic is handled by an indirect object parser.\n\n\t#*************************************************************************************************************#\n\t# the indirectObjectReference machine #\n\t\n\taction indirectObjectReference {\n\t\t[fsm->self addToken:[PDFToken indirectObjectReference]];\n\t}\n\t\t\n\tindirectObjectReference = 'R' %indirectObjectReference ;\n\t\t\n\t#*************************************************************************************************************#\n\t# the PDFParsingMachine machine #\n\t\n\t# Or together then star all the lanuage elements. Use the longest match\n\t# kleene star operator This is so that when we see 'aa' we stay in the fin\n\t# machine to match an ident of length two and not wrap around to the front\n\t# to match two idents of length one.\n\tPDFParsingMachine_main = ( \n\t\twhitespace |\n\t\tcomment |\n\t\tboolean |\n\t\tnumber |\n\t\thexString |\n\t\tname |\n\t\tliteralString |\n\t\tbeginArray |\n\t\tendArray |\n\t\tbeginDict |\n\t\tendDict |\n\t\tpdfNull |\n\t\tstream |\n\t\tbeginIndirectObject |\n\t\tendIndirectObject |\n\t\tindirectObjectReference )**;\n\n\t# This machine matches everything, taking note of newlines.\n\t# newline = ( any | eol %{ [fsm->self incrementLine]; } )*;\n\n\t# The final fsm is the lexer intersected with the newline machine which\n\t# will count lines for us. Since the newline machine accepts everything,\n\t# the strings accepted is goverened by the clang_main machine, onto which\n\t# the newline machine overlays line counting.\n\t\n\tmain := PDFParsingMachine_main; # & newline;\n\t\n%%\n",
+			);
+			script = "echo \"*.rli file processed\"\n/usr/local/bin/ragel $(INPUT_FILE_BASE).rli -c -G2 -o $(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).m\n/usr/local/bin/ragel $(INPUT_FILE_BASE).rli -V -o $(DERIVED_FILES_DIR)/$(INPUT_FILE_BASE).dot";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		787C7DB806A3673000CE1FE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 787C7DAC06A3669700CE1FE6;
+			remoteInfo = AmpedeBundle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		78517B3E06A3A0BC008CD01C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8E3C2F4F083E9E8B00FBAF41 /* LicenseControl.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78517B4506A3A0D1008CD01C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				78517B7906A46020008CD01C /* LicenseControl.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787C7E6506A369AB00CE1FE6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/PDFLayerViewer.nib; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Ampede.nib; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* Ampede_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ampede_Prefix.pch; sourceTree = "<group>"; };
+		782DA47506A4D3A5000DC550 /* AIDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDocument.h; sourceTree = "<group>"; };
+		782DA47606A4D3A5000DC550 /* AIDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIDocument.m; sourceTree = "<group>"; };
+		782DA63706A50130000DC550 /* AILayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILayer.h; sourceTree = "<group>"; };
+		782DA63806A50130000DC550 /* AILayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AILayer.m; sourceTree = "<group>"; };
+		782DA73506A510B1000DC550 /* AIPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPage.h; sourceTree = "<group>"; };
+		782DA73606A510B1000DC550 /* AIPage.rl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AIPage.rl; sourceTree = "<group>"; };
+		782DAB6C06A5FA71000DC550 /* AIDocument-Ragel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIDocument-Ragel.h"; sourceTree = "<group>"; };
+		782DAB6D06A5FA71000DC550 /* AIDocument-Ragel.rl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "AIDocument-Ragel.rl"; sourceTree = "<group>"; };
+		782DAC5F06A618B3000DC550 /* AIDocument-Ragel1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIDocument-Ragel1.h"; sourceTree = "<group>"; };
+		782DAC6006A618B3000DC550 /* AIDocument-Ragel1.rl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "AIDocument-Ragel1.rl"; sourceTree = "<group>"; };
+		782DAD2206A63702000DC550 /* AIDocument-Ragel2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIDocument-Ragel2.h"; sourceTree = "<group>"; };
+		782DAD2306A63702000DC550 /* AIDocument-Ragel2.rl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "AIDocument-Ragel2.rl"; sourceTree = "<group>"; };
+		782DADB306A63AF8000DC550 /* AIDocument-Ragel3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIDocument-Ragel3.h"; sourceTree = "<group>"; };
+		782DADB406A63AF8000DC550 /* AIDocument-Ragel3.rl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "AIDocument-Ragel3.rl"; sourceTree = "<group>"; };
+		782DAEB506A64A49000DC550 /* AIDocument-Ragel4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AIDocument-Ragel4.h"; sourceTree = "<group>"; };
+		782DAEB606A64A49000DC550 /* AIDocument-Ragel4.rl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "AIDocument-Ragel4.rl"; sourceTree = "<group>"; };
+		78320DC406A7B64100DE0F14 /* PDFLexer-Ragel.dot */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "PDFLexer-Ragel.dot"; sourceTree = "<group>"; };
+		78320FCF06A867B700DE0F14 /* PDFParsingProtocolDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFParsingProtocolDebug.h; sourceTree = "<group>"; };
+		7832110806A8DE6600DE0F14 /* PDFToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFToken.h; sourceTree = "<group>"; };
+		7832110906A8DE6600DE0F14 /* PDFToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFToken.m; sourceTree = "<group>"; };
+		7834A43006BCECA700AAD966 /* QuartzImports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzImports.h; sourceTree = "<group>"; };
+		7834A98206BE18D200AAD966 /* AmpedeDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AmpedeDocument.h; sourceTree = "<group>"; };
+		7834A98306BE18D200AAD966 /* AmpedeDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AmpedeDocument.m; sourceTree = "<group>"; };
+		7834AE7806BE805300AAD966 /* UKKQueue.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UKKQueue.h; sourceTree = "<group>"; };
+		7834AE7906BE805300AAD966 /* UKKQueue.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UKKQueue.m; sourceTree = "<group>"; };
+		7834AE8306BE807D00AAD966 /* UKKQueue Readme.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "UKKQueue Readme.txt"; sourceTree = "<group>"; };
+		7845FAD506D0A0A3002A16E3 /* com.ampede.ef.sequence.toolbar.file_info.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = com.ampede.ef.sequence.toolbar.file_info.tiff; path = Images/com.ampede.ef.sequence.toolbar.file_info.tiff; sourceTree = "<group>"; };
+		784C305206B8B4B600AFBA4F /* SequenceDocument.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = SequenceDocument.nib; sourceTree = "<group>"; };
+		784C305A06B8B5EA00AFBA4F /* SequenceWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SequenceWindowController.h; sourceTree = "<group>"; };
+		784C305B06B8B5EA00AFBA4F /* SequenceWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SequenceWindowController.m; sourceTree = "<group>"; };
+		784F589106B900F300470FA8 /* com.ampede.ef.sequence.toolbar.quartz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = com.ampede.ef.sequence.toolbar.quartz.png; path = Images/com.ampede.ef.sequence.toolbar.quartz.png; sourceTree = "<group>"; };
+		784F58B706B9048900470FA8 /* com.ampede.ef.sequence.toolbar.software_update.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = com.ampede.ef.sequence.toolbar.software_update.tiff; path = Images/com.ampede.ef.sequence.toolbar.software_update.tiff; sourceTree = "<group>"; };
+		78517B6806A3A146008CD01C /* LicenseControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LicenseControl.framework; path = /Users/ocean/Library/Frameworks/LicenseControl.framework; sourceTree = "<absolute>"; };
+		787C7D0206A2292100CE1FE6 /* Ampede.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ampede.h; sourceTree = "<group>"; };
+		787C7D0306A2292100CE1FE6 /* Ampede.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ampede.m; sourceTree = "<group>"; };
+		787C7D9506A365BE00CE1FE6 /* Ampede LCed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ampede LCed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		787C7DAD06A3669700CE1FE6 /* AmpedeBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmpedeBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		787C7DAE06A3669700CE1FE6 /* AmpedeBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "AmpedeBundle-Info.plist"; path = "/Users/ocean/OLD OCEAN/Ampede/Ampede/AmpedeBundle-Info.plist"; sourceTree = "<absolute>"; };
+		787C7E0F06A3686D00CE1FE6 /* main_LC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main_LC.m; sourceTree = "<group>"; };
+		787C7F8506A36A8400CE1FE6 /* LCmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCmain.m; sourceTree = "<group>"; };
+		787C7F9D06A371D600CE1FE6 /* LicenseAgreement.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = LicenseAgreement.rtfd; sourceTree = "<group>"; };
+		78839A7D06BB529F007ED111 /* com.ampede.ef.sequence.toolbar.licensing.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = com.ampede.ef.sequence.toolbar.licensing.gif; path = Images/com.ampede.ef.sequence.toolbar.licensing.gif; sourceTree = "<group>"; };
+		78839A8206BB5388007ED111 /* com.ampede.ef.sequence.toolbar.colorsync.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = com.ampede.ef.sequence.toolbar.colorsync.png; path = Images/com.ampede.ef.sequence.toolbar.colorsync.png; sourceTree = "<group>"; };
+		78839CFC06BBAB27007ED111 /* DrawingEnums.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DrawingEnums.h; sourceTree = "<group>"; };
+		7890A21006C2616900944F20 /* EFTextField.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = EFTextField.h; sourceTree = "<group>"; };
+		7890A21106C2616900944F20 /* EFTextField.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = EFTextField.m; sourceTree = "<group>"; };
+		7891849B06ACF0CE00C899F4 /* AmpedeFCP.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmpedeFCP.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7891849C06ACF0CE00C899F4 /* AmpedeFCP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "AmpedeFCP-Info.plist"; path = "/Users/ocean/OLD OCEAN/Ampede/Ampede/AmpedeFCP-Info.plist"; sourceTree = "<absolute>"; };
+		789184D206ACFA5900C899F4 /* A.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
+		789184D306ACFA5900C899F4 /* AE_Effect.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AE_Effect.h; sourceTree = "<group>"; };
+		789184D406ACFA5A00C899F4 /* AE_EffectCB.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AE_EffectCB.h; sourceTree = "<group>"; };
+		789184D506ACFA5A00C899F4 /* AE_General.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = AE_General.r; sourceTree = "<group>"; };
+		789184D606ACFA5A00C899F4 /* AE_Macros.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AE_Macros.h; sourceTree = "<group>"; };
+		789184D706ACFA5A00C899F4 /* AmpedeFCP.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = AmpedeFCP.c; sourceTree = "<group>"; };
+		789184D806ACFA5A00C899F4 /* AmpedeFCP.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AmpedeFCP.h; sourceTree = "<group>"; };
+		789184D906ACFA5A00C899F4 /* AmpedeFCPPiPL.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; path = AmpedeFCPPiPL.r; sourceTree = "<group>"; };
+		789184DC06ACFA5A00C899F4 /* Param_Utils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Param_Utils.h; sourceTree = "<group>"; };
+		789184DD06ACFA5A00C899F4 /* StateMacros.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = StateMacros.h; sourceTree = "<group>"; };
+		7891861B06AD112800C899F4 /* AmpedeFCP */ = {isa = PBXFileReference; lastKnownFileType = text; path = AmpedeFCP; sourceTree = BUILT_PRODUCTS_DIR; };
+		789186B406ADA93500C899F4 /* MoreSetup.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MoreSetup.h; sourceTree = "<group>"; };
+		7892DA8206C6C88C00678F21 /* PDFBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFBoxView.h; sourceTree = "<group>"; };
+		7892DA8306C6C88C00678F21 /* PDFBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFBoxView.m; sourceTree = "<group>"; };
+		7892DB9106C6F48100678F21 /* UKFeedbackProvider.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UKFeedbackProvider.h; sourceTree = "<group>"; };
+		7892DB9206C6F48100678F21 /* UKFeedbackProvider.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UKFeedbackProvider.m; sourceTree = "<group>"; };
+		7892DB9306C6F48100678F21 /* UKUpdateChecker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UKUpdateChecker.h; sourceTree = "<group>"; };
+		7892DB9406C6F48100678F21 /* UKUpdateChecker.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UKUpdateChecker.m; sourceTree = "<group>"; };
+		7892DB9A06C6F4A200678F21 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/UKFeedbackProvider.nib; sourceTree = "<group>"; };
+		7892DB9C06C6F4A200678F21 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/UKUpdateChecker.strings; sourceTree = "<group>"; };
+		7892DBA406C6F57600678F21 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7892DBAE06C6F6FD00678F21 /* MacPAD.url */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = MacPAD.url; sourceTree = "<group>"; };
+		78950F9406C3C29C00ABF031 /* com.ampede.ef.sequence.toolbar.preferences.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = com.ampede.ef.sequence.toolbar.preferences.tiff; sourceTree = "<group>"; };
+		7897B57906AF7EE1004BB74A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /Developer/SDKs/MacOSX10.3.9.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		7897DB3F06BCCD6B007A1C19 /* CGAffineTransform.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGAffineTransform.h; sourceTree = "<group>"; };
+		7897DB4006BCCD6B007A1C19 /* CGBase.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGBase.h; sourceTree = "<group>"; };
+		7897DB4106BCCD6B007A1C19 /* CGBitmapContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGBitmapContext.h; sourceTree = "<group>"; };
+		7897DB4206BCCD6B007A1C19 /* CGColor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGColor.h; sourceTree = "<group>"; };
+		7897DB4306BCCD6B007A1C19 /* CGColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGColorSpace.h; sourceTree = "<group>"; };
+		7897DB4406BCCD6B007A1C19 /* CGContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGContext.h; sourceTree = "<group>"; };
+		7897DB4506BCCD6B007A1C19 /* CGDataConsumer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGDataConsumer.h; sourceTree = "<group>"; };
+		7897DB4606BCCD6B007A1C19 /* CGDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGDataProvider.h; sourceTree = "<group>"; };
+		7897DB4706BCCD6B007A1C19 /* CGDirectDisplay.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGDirectDisplay.h; sourceTree = "<group>"; };
+		7897DB4806BCCD6B007A1C19 /* CGDirectPalette.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGDirectPalette.h; sourceTree = "<group>"; };
+		7897DB4906BCCD6B007A1C19 /* CGDisplayConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGDisplayConfiguration.h; sourceTree = "<group>"; };
+		7897DB4A06BCCD6B007A1C19 /* CGDisplayFade.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGDisplayFade.h; sourceTree = "<group>"; };
+		7897DB4B06BCCD6B007A1C19 /* CGError.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGError.h; sourceTree = "<group>"; };
+		7897DB4C06BCCD6B007A1C19 /* CGFont.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGFont.h; sourceTree = "<group>"; };
+		7897DB4D06BCCD6B007A1C19 /* CGFunction.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGFunction.h; sourceTree = "<group>"; };
+		7897DB4E06BCCD6B007A1C19 /* CGGeometry.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGGeometry.h; sourceTree = "<group>"; };
+		7897DB4F06BCCD6B007A1C19 /* CGGLContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGGLContext.h; sourceTree = "<group>"; };
+		7897DB5006BCCD6B007A1C19 /* CGImage.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGImage.h; sourceTree = "<group>"; };
+		7897DB5106BCCD6B007A1C19 /* CGPath.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGPath.h; sourceTree = "<group>"; };
+		7897DB5206BCCD6B007A1C19 /* CGPattern.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGPattern.h; sourceTree = "<group>"; };
+		7897DB5306BCCD6B007A1C19 /* CGPDFArray.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGPDFArray.h; sourceTree = "<group>"; };
+		7897DB5406BCCD6B007A1C19 /* CGPDFContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGPDFContext.h; sourceTree = "<group>"; };
+		7897DB5506BCCD6B007A1C19 /* CGPDFDictionary.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGPDFDictionary.h; sourceTree = "<group>"; };
+		7897DB5606BCCD6B007A1C19 /* CGPDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGPDFDocument.h; sourceTree = "<group>"; };
+		7897DB5706BCCD6B007A1C19 /* CGPDFObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGPDFObject.h; sourceTree = "<group>"; };
+		7897DB5806BCCD6B007A1C19 /* CGPDFPage.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGPDFPage.h; sourceTree = "<group>"; };
+		7897DB5906BCCD6B007A1C19 /* CGPDFStream.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGPDFStream.h; sourceTree = "<group>"; };
+		7897DB5A06BCCD6B007A1C19 /* CGPDFString.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGPDFString.h; sourceTree = "<group>"; };
+		7897DB5B06BCCD6B007A1C19 /* CGPSConverter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGPSConverter.h; sourceTree = "<group>"; };
+		7897DB5C06BCCD6B007A1C19 /* CGRemoteOperation.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGRemoteOperation.h; sourceTree = "<group>"; };
+		7897DB5D06BCCD6B007A1C19 /* CGSession.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGSession.h; sourceTree = "<group>"; };
+		7897DB5E06BCCD6B007A1C19 /* CGShading.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGShading.h; sourceTree = "<group>"; };
+		7897DB5F06BCCD6B007A1C19 /* CGWindowLevel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CGWindowLevel.h; sourceTree = "<group>"; };
+		7897DB6006BCCD6B007A1C19 /* CoreGraphics.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CoreGraphics.h; sourceTree = "<group>"; };
+		7899776D06A72A9600D64F90 /* PDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFDocument.h; sourceTree = "<group>"; };
+		7899776E06A72A9600D64F90 /* PDFDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFDocument.m; sourceTree = "<group>"; };
+		7899778F06A72B5100D64F90 /* PDFTrailer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFTrailer.h; sourceTree = "<group>"; };
+		7899779006A72B5100D64F90 /* PDFTrailer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFTrailer.m; sourceTree = "<group>"; };
+		7899779906A72B6800D64F90 /* PDFXref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFXref.h; sourceTree = "<group>"; };
+		7899779A06A72B6800D64F90 /* PDFXref.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFXref.m; sourceTree = "<group>"; };
+		7899785E06A735DD00D64F90 /* PDFBoolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFBoolean.h; sourceTree = "<group>"; };
+		7899785F06A735DD00D64F90 /* PDFBoolean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFBoolean.m; sourceTree = "<group>"; };
+		7899786806A735FE00D64F90 /* PDFStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFStream.h; sourceTree = "<group>"; };
+		7899786906A735FE00D64F90 /* PDFStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFStream.m; sourceTree = "<group>"; };
+		789978F806A73B9E00D64F90 /* PDFIndirectObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFIndirectObject.h; sourceTree = "<group>"; };
+		789978F906A73B9E00D64F90 /* PDFIndirectObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFIndirectObject.m; sourceTree = "<group>"; };
+		7899795F06A748ED00D64F90 /* PDF machines.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "PDF machines.txt"; sourceTree = "<group>"; };
+		78997C5E06A78C5F00D64F90 /* PDFParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFParser.h; sourceTree = "<group>"; };
+		78997C5F06A78C5F00D64F90 /* PDFParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFParser.m; sourceTree = "<group>"; };
+		78997C7306A78D2F00D64F90 /* PDFLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFLexer.h; sourceTree = "<group>"; };
+		78997C7406A78D2F00D64F90 /* PDFLexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFLexer.m; sourceTree = "<group>"; };
+		78997C9C06A7982900D64F90 /* PDFObjectBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFObjectBuilder.h; sourceTree = "<group>"; };
+		78997C9D06A7982900D64F90 /* PDFObjectBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFObjectBuilder.m; sourceTree = "<group>"; };
+		78997CAA06A7983E00D64F90 /* PDFParsingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFParsingProtocol.h; sourceTree = "<group>"; };
+		78997DBE06A7AA2500D64F90 /* PDFLexer-Ragel.rl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "PDFLexer-Ragel.rl"; sourceTree = "<group>"; };
+		789B6EF706CDA5D500578EAE /* Final Cut Pro-plugin.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Final Cut Pro-plugin.icns"; sourceTree = "<group>"; };
+		78AA03B106B489F200F9B47C /* AboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutView.h; sourceTree = "<group>"; };
+		78AA03B206B489F200F9B47C /* AboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutView.m; sourceTree = "<group>"; };
+		78AA03DD06B48BA400F9B47C /* about.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = about.tif; sourceTree = "<group>"; };
+		78AA043806B49F5900F9B47C /* SequenceDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SequenceDocument.h; sourceTree = "<group>"; };
+		78AA043906B49F5900F9B47C /* SequenceDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SequenceDocument.m; sourceTree = "<group>"; };
+		78AA05F006B5547400F9B47C /* default.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = default.pdf; sourceTree = "<group>"; };
+		78F0897606AB1B24007909ED /* PDFLexer-RagelImp.rli */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "PDFLexer-RagelImp.rli"; sourceTree = "<group>"; };
+		78F089AA06AB1D04007909ED /* PDFLexer-RagelImp.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "PDFLexer-RagelImp.m"; sourceTree = "<group>"; };
+		78F08C2A06AC758F007909ED /* NSObject-PDFTokenProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-PDFTokenProtocol.m"; sourceTree = "<group>"; };
+		78FD540706C9E1B7003D9128 /* com.ampede.ef.sequence.toolbar.pdf.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = com.ampede.ef.sequence.toolbar.pdf.tiff; path = Images/com.ampede.ef.sequence.toolbar.pdf.tiff; sourceTree = "<group>"; };
+		78FEADE706AC82B400447BC8 /* PDFDocument.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = PDFDocument.nib; sourceTree = "<group>"; };
+		78FEAE1906AC896400447BC8 /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
+		78FEAE1A06AC896400447BC8 /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFView.m; sourceTree = "<group>"; };
+		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* Ampede.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Ampede.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		787C7D9306A365BE00CE1FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787C7D9406A365BE00CE1FE6 /* Cocoa.framework in Frameworks */,
+				78517B6906A3A146008CD01C /* LicenseControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787C7DAB06A3669700CE1FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787C7E6C06A36A0A00CE1FE6 /* Cocoa.framework in Frameworks */,
+				787C7E7106A36A0B00CE1FE6 /* Foundation.framework in Frameworks */,
+				787C7EE206A36A0B00CE1FE6 /* AppKit.framework in Frameworks */,
+				78517B6A06A3A146008CD01C /* LicenseControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7891849906ACF0CE00C899F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7897B57906AF7EE1004BB74A /* Accelerate.framework */,
+				78517B6806A3A146008CD01C /* LicenseControl.framework */,
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7891861B06AD112800C899F4 /* AmpedeFCP */,
+				8D15AC370486D014006FF6A4 /* Ampede.app */,
+				787C7D9506A365BE00CE1FE6 /* Ampede LCed.app */,
+				787C7DAD06A3669700CE1FE6 /* AmpedeBundle.bundle */,
+				7891849B06ACF0CE00C899F4 /* AmpedeFCP.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* Ampede */ = {
+			isa = PBXGroup;
+			children = (
+				787C7D0206A2292100CE1FE6 /* Ampede.h */,
+				787C7D0306A2292100CE1FE6 /* Ampede.m */,
+				7844F55406B095B60005E45D /* Classes */,
+				789184CE06ACFA2D00C899F4 /* Final Cut Pro */,
+				2A37F4ABFDCFA73011CA2CEA /* PDF Classes */,
+				78997CC806A798C100D64F90 /* PDF Parsing Classes */,
+				78997E5D06A7AABC00D64F90 /* AI Classes */,
+				7834AE7F06BE805B00AAD966 /* 3rd Party Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+				787C7DAE06A3669700CE1FE6 /* AmpedeBundle-Info.plist */,
+				7891849C06ACF0CE00C899F4 /* AmpedeFCP-Info.plist */,
+			);
+			name = Ampede;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* PDF Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7899776D06A72A9600D64F90 /* PDFDocument.h */,
+				7899776E06A72A9600D64F90 /* PDFDocument.m */,
+				7899778F06A72B5100D64F90 /* PDFTrailer.h */,
+				7899779006A72B5100D64F90 /* PDFTrailer.m */,
+				7899779906A72B6800D64F90 /* PDFXref.h */,
+				7899779A06A72B6800D64F90 /* PDFXref.m */,
+				789978F806A73B9E00D64F90 /* PDFIndirectObject.h */,
+				789978F906A73B9E00D64F90 /* PDFIndirectObject.m */,
+				7899785E06A735DD00D64F90 /* PDFBoolean.h */,
+				7899785F06A735DD00D64F90 /* PDFBoolean.m */,
+				7899786806A735FE00D64F90 /* PDFStream.h */,
+				7899786906A735FE00D64F90 /* PDFStream.m */,
+			);
+			name = "PDF Classes";
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF750370BD2300C91783 /* Ampede_Prefix.pch */,
+				787C7F8506A36A8400CE1FE6 /* LCmain.m */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+				787C7E0F06A3686D00CE1FE6 /* main_LC.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				789B6EF706CDA5D500578EAE /* Final Cut Pro-plugin.icns */,
+				7892DBAE06C6F6FD00678F21 /* MacPAD.url */,
+				7892DBA406C6F57600678F21 /* Localizable.strings */,
+				78839A9206BB56AA007ED111 /* Toolbar Images */,
+				78AA05F006B5547400F9B47C /* default.pdf */,
+				78AA03DD06B48BA400F9B47C /* about.tif */,
+				787C7F9D06A371D600CE1FE6 /* LicenseAgreement.rtfd */,
+				2A37F4B6FDCFA73011CA2CEA /* Ampede.nib */,
+				784C305206B8B4B600AFBA4F /* SequenceDocument.nib */,
+				2A37F4B4FDCFA73011CA2CEA /* PDFLayerViewer.nib */,
+				78FEADE706AC82B400447BC8 /* PDFDocument.nib */,
+				8D15AC360486D014006FF6A4 /* Info.plist */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7834AE7F06BE805B00AAD966 /* 3rd Party Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7892DB9906C6F4A200678F21 /* UKFeedbackProvider.nib */,
+				7892DB9B06C6F4A200678F21 /* UKUpdateChecker.strings */,
+				7892DB9106C6F48100678F21 /* UKFeedbackProvider.h */,
+				7892DB9206C6F48100678F21 /* UKFeedbackProvider.m */,
+				7892DB9306C6F48100678F21 /* UKUpdateChecker.h */,
+				7892DB9406C6F48100678F21 /* UKUpdateChecker.m */,
+				7834AE8306BE807D00AAD966 /* UKKQueue Readme.txt */,
+				7834AE7806BE805300AAD966 /* UKKQueue.h */,
+				7834AE7906BE805300AAD966 /* UKKQueue.m */,
+			);
+			name = "3rd Party Classes";
+			sourceTree = "<group>";
+		};
+		7844F55406B095B60005E45D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7890A21006C2616900944F20 /* EFTextField.h */,
+				7890A21106C2616900944F20 /* EFTextField.m */,
+				78839CFC06BBAB27007ED111 /* DrawingEnums.h */,
+				7834A98206BE18D200AAD966 /* AmpedeDocument.h */,
+				7834A98306BE18D200AAD966 /* AmpedeDocument.m */,
+				78AA043806B49F5900F9B47C /* SequenceDocument.h */,
+				78AA043906B49F5900F9B47C /* SequenceDocument.m */,
+				784C305A06B8B5EA00AFBA4F /* SequenceWindowController.h */,
+				784C305B06B8B5EA00AFBA4F /* SequenceWindowController.m */,
+				78AA03B106B489F200F9B47C /* AboutView.h */,
+				78AA03B206B489F200F9B47C /* AboutView.m */,
+				78FEAE1906AC896400447BC8 /* PDFView.h */,
+				78FEAE1A06AC896400447BC8 /* PDFView.m */,
+				7892DA8206C6C88C00678F21 /* PDFBoxView.h */,
+				7892DA8306C6C88C00678F21 /* PDFBoxView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		7844F58206B097940005E45D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				789184DD06ACFA5A00C899F4 /* StateMacros.h */,
+				789186B406ADA93500C899F4 /* MoreSetup.h */,
+				789184D906ACFA5A00C899F4 /* AmpedeFCPPiPL.r */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78839A9206BB56AA007ED111 /* Toolbar Images */ = {
+			isa = PBXGroup;
+			children = (
+				7845FAD506D0A0A3002A16E3 /* com.ampede.ef.sequence.toolbar.file_info.tiff */,
+				78FD540706C9E1B7003D9128 /* com.ampede.ef.sequence.toolbar.pdf.tiff */,
+				78950F9406C3C29C00ABF031 /* com.ampede.ef.sequence.toolbar.preferences.tiff */,
+				78839A8206BB5388007ED111 /* com.ampede.ef.sequence.toolbar.colorsync.png */,
+				78839A7D06BB529F007ED111 /* com.ampede.ef.sequence.toolbar.licensing.gif */,
+				784F58B706B9048900470FA8 /* com.ampede.ef.sequence.toolbar.software_update.tiff */,
+				784F589106B900F300470FA8 /* com.ampede.ef.sequence.toolbar.quartz.png */,
+			);
+			name = "Toolbar Images";
+			sourceTree = "<group>";
+		};
+		789184CE06ACFA2D00C899F4 /* Final Cut Pro */ = {
+			isa = PBXGroup;
+			children = (
+				7834A43006BCECA700AAD966 /* QuartzImports.h */,
+				789184D806ACFA5A00C899F4 /* AmpedeFCP.h */,
+				789184D706ACFA5A00C899F4 /* AmpedeFCP.c */,
+				7897DB3906BCCD4E007A1C19 /* CoreGraphics */,
+				7844F58206B097940005E45D /* Supporting Files */,
+				7891856706ACFB0C00C899F4 /* After Effects SDK */,
+			);
+			name = "Final Cut Pro";
+			sourceTree = "<group>";
+		};
+		7891856706ACFB0C00C899F4 /* After Effects SDK */ = {
+			isa = PBXGroup;
+			children = (
+				789184D206ACFA5900C899F4 /* A.h */,
+				789184D306ACFA5900C899F4 /* AE_Effect.h */,
+				789184D406ACFA5A00C899F4 /* AE_EffectCB.h */,
+				789184D506ACFA5A00C899F4 /* AE_General.r */,
+				789184D606ACFA5A00C899F4 /* AE_Macros.h */,
+				789184DC06ACFA5A00C899F4 /* Param_Utils.h */,
+			);
+			name = "After Effects SDK";
+			sourceTree = "<group>";
+		};
+		7897DB3906BCCD4E007A1C19 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				7897DB3F06BCCD6B007A1C19 /* CGAffineTransform.h */,
+				7897DB4006BCCD6B007A1C19 /* CGBase.h */,
+				7897DB4106BCCD6B007A1C19 /* CGBitmapContext.h */,
+				7897DB4206BCCD6B007A1C19 /* CGColor.h */,
+				7897DB4306BCCD6B007A1C19 /* CGColorSpace.h */,
+				7897DB4406BCCD6B007A1C19 /* CGContext.h */,
+				7897DB4506BCCD6B007A1C19 /* CGDataConsumer.h */,
+				7897DB4606BCCD6B007A1C19 /* CGDataProvider.h */,
+				7897DB4706BCCD6B007A1C19 /* CGDirectDisplay.h */,
+				7897DB4806BCCD6B007A1C19 /* CGDirectPalette.h */,
+				7897DB4906BCCD6B007A1C19 /* CGDisplayConfiguration.h */,
+				7897DB4A06BCCD6B007A1C19 /* CGDisplayFade.h */,
+				7897DB4B06BCCD6B007A1C19 /* CGError.h */,
+				7897DB4C06BCCD6B007A1C19 /* CGFont.h */,
+				7897DB4D06BCCD6B007A1C19 /* CGFunction.h */,
+				7897DB4E06BCCD6B007A1C19 /* CGGeometry.h */,
+				7897DB4F06BCCD6B007A1C19 /* CGGLContext.h */,
+				7897DB5006BCCD6B007A1C19 /* CGImage.h */,
+				7897DB5106BCCD6B007A1C19 /* CGPath.h */,
+				7897DB5206BCCD6B007A1C19 /* CGPattern.h */,
+				7897DB5306BCCD6B007A1C19 /* CGPDFArray.h */,
+				7897DB5406BCCD6B007A1C19 /* CGPDFContext.h */,
+				7897DB5506BCCD6B007A1C19 /* CGPDFDictionary.h */,
+				7897DB5606BCCD6B007A1C19 /* CGPDFDocument.h */,
+				7897DB5706BCCD6B007A1C19 /* CGPDFObject.h */,
+				7897DB5806BCCD6B007A1C19 /* CGPDFPage.h */,
+				7897DB5906BCCD6B007A1C19 /* CGPDFStream.h */,
+				7897DB5A06BCCD6B007A1C19 /* CGPDFString.h */,
+				7897DB5B06BCCD6B007A1C19 /* CGPSConverter.h */,
+				7897DB5C06BCCD6B007A1C19 /* CGRemoteOperation.h */,
+				7897DB5D06BCCD6B007A1C19 /* CGSession.h */,
+				7897DB5E06BCCD6B007A1C19 /* CGShading.h */,
+				7897DB5F06BCCD6B007A1C19 /* CGWindowLevel.h */,
+				7897DB6006BCCD6B007A1C19 /* CoreGraphics.h */,
+			);
+			name = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		78997CC806A798C100D64F90 /* PDF Parsing Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7899795F06A748ED00D64F90 /* PDF machines.txt */,
+				78997CAA06A7983E00D64F90 /* PDFParsingProtocol.h */,
+				78320FCF06A867B700DE0F14 /* PDFParsingProtocolDebug.h */,
+				78F08C2A06AC758F007909ED /* NSObject-PDFTokenProtocol.m */,
+				78997C5E06A78C5F00D64F90 /* PDFParser.h */,
+				78997C5F06A78C5F00D64F90 /* PDFParser.m */,
+				78997C7306A78D2F00D64F90 /* PDFLexer.h */,
+				78997C7406A78D2F00D64F90 /* PDFLexer.m */,
+				78997DBE06A7AA2500D64F90 /* PDFLexer-Ragel.rl */,
+				78F0897606AB1B24007909ED /* PDFLexer-RagelImp.rli */,
+				78F089AA06AB1D04007909ED /* PDFLexer-RagelImp.m */,
+				78320DC406A7B64100DE0F14 /* PDFLexer-Ragel.dot */,
+				78997C9C06A7982900D64F90 /* PDFObjectBuilder.h */,
+				78997C9D06A7982900D64F90 /* PDFObjectBuilder.m */,
+				7832110806A8DE6600DE0F14 /* PDFToken.h */,
+				7832110906A8DE6600DE0F14 /* PDFToken.m */,
+			);
+			name = "PDF Parsing Classes";
+			sourceTree = "<group>";
+		};
+		78997E5D06A7AABC00D64F90 /* AI Classes */ = {
+			isa = PBXGroup;
+			children = (
+				782DA47506A4D3A5000DC550 /* AIDocument.h */,
+				782DA47606A4D3A5000DC550 /* AIDocument.m */,
+				782DAB6C06A5FA71000DC550 /* AIDocument-Ragel.h */,
+				782DAB6D06A5FA71000DC550 /* AIDocument-Ragel.rl */,
+				782DAC5F06A618B3000DC550 /* AIDocument-Ragel1.h */,
+				782DAC6006A618B3000DC550 /* AIDocument-Ragel1.rl */,
+				782DAD2206A63702000DC550 /* AIDocument-Ragel2.h */,
+				782DAD2306A63702000DC550 /* AIDocument-Ragel2.rl */,
+				782DADB306A63AF8000DC550 /* AIDocument-Ragel3.h */,
+				782DADB406A63AF8000DC550 /* AIDocument-Ragel3.rl */,
+				782DAEB506A64A49000DC550 /* AIDocument-Ragel4.h */,
+				782DAEB606A64A49000DC550 /* AIDocument-Ragel4.rl */,
+				782DA73506A510B1000DC550 /* AIPage.h */,
+				782DA73606A510B1000DC550 /* AIPage.rl */,
+				782DA63706A50130000DC550 /* AILayer.h */,
+				782DA63806A50130000DC550 /* AILayer.m */,
+			);
+			name = "AI Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		787C7D8606A365BE00CE1FE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787C7DA806A3669700CE1FE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787C7DC006A3676B00CE1FE6 /* Ampede.h in Headers */,
+				782894F206C7BA92001F23C6 /* PDFBoxView.h in Headers */,
+				782894F406C7BA93001F23C6 /* PDFView.h in Headers */,
+				782894F606C7BA94001F23C6 /* AboutView.h in Headers */,
+				782894F806C7BA96001F23C6 /* SequenceWindowController.h in Headers */,
+				782894FA06C7BA97001F23C6 /* SequenceDocument.h in Headers */,
+				782894FC06C7BA99001F23C6 /* AmpedeDocument.h in Headers */,
+				782894FD06C7BA99001F23C6 /* DrawingEnums.h in Headers */,
+				782894FF06C7BA9A001F23C6 /* EFTextField.h in Headers */,
+				7828950006C7BAB5001F23C6 /* UKUpdateChecker.h in Headers */,
+				7828950306C7BABA001F23C6 /* UKKQueue.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7891849506ACF0CE00C899F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D15AC280486D014006FF6A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC290486D014006FF6A4 /* Ampede_Prefix.pch in Headers */,
+				787C7D0406A2292100CE1FE6 /* Ampede.h in Headers */,
+				78FEAE1B06AC896400447BC8 /* PDFView.h in Headers */,
+				78AA03B306B489F200F9B47C /* AboutView.h in Headers */,
+				78AA043A06B49F5900F9B47C /* SequenceDocument.h in Headers */,
+				784C305C06B8B5EA00AFBA4F /* SequenceWindowController.h in Headers */,
+				78839CFD06BBAB27007ED111 /* DrawingEnums.h in Headers */,
+				7834A98406BE18D200AAD966 /* AmpedeDocument.h in Headers */,
+				7834AE7A06BE805300AAD966 /* UKKQueue.h in Headers */,
+				7895107206C3CE5500ABF031 /* EFTextField.h in Headers */,
+				7892DA8406C6C88C00678F21 /* PDFBoxView.h in Headers */,
+				7892DB9706C6F48100678F21 /* UKUpdateChecker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		787C7D8506A365BE00CE1FE6 /* Ampede LicenseControlled */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E47046D0B24B13200C7FB73 /* Build configuration list for PBXNativeTarget "Ampede LicenseControlled" */;
+			buildPhases = (
+				787C7D8606A365BE00CE1FE6 /* Headers */,
+				787C7D8A06A365BE00CE1FE6 /* Resources */,
+				787C7D8F06A365BE00CE1FE6 /* Sources */,
+				787C7D9306A365BE00CE1FE6 /* Frameworks */,
+				787C7F9606A36F3000CE1FE6 /* ShellScript */,
+				787C7FCA06A372EB00CE1FE6 /* ShellScript */,
+				78517B3E06A3A0BC008CD01C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				787C7DB906A3673000CE1FE6 /* PBXTargetDependency */,
+			);
+			name = "Ampede LicenseControlled";
+			productInstallPath = "$(HOME)/Applications";
+			productName = Ampede;
+			productReference = 787C7D9506A365BE00CE1FE6 /* Ampede LCed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		787C7DAC06A3669700CE1FE6 /* AmpedeBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E4704690B24B13200C7FB73 /* Build configuration list for PBXNativeTarget "AmpedeBundle" */;
+			buildPhases = (
+				787C7DA806A3669700CE1FE6 /* Headers */,
+				787C7DA906A3669700CE1FE6 /* Resources */,
+				787C7DAA06A3669700CE1FE6 /* Sources */,
+				787C7DAB06A3669700CE1FE6 /* Frameworks */,
+				78517B4506A3A0D1008CD01C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmpedeBundle;
+			productName = AmpedeBundle;
+			productReference = 787C7DAD06A3669700CE1FE6 /* AmpedeBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		7891849A06ACF0CE00C899F4 /* AmpedeFCP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E4704710B24B13200C7FB73 /* Build configuration list for PBXNativeTarget "AmpedeFCP" */;
+			buildPhases = (
+				7897B0C606AE40A4004BB74A /* ShellScript */,
+				7891861006AD0FB600C899F4 /* ShellScript */,
+				7891863B06AD140C00C899F4 /* ShellScript */,
+				7891849506ACF0CE00C899F4 /* Headers */,
+				7891849606ACF0CE00C899F4 /* Resources */,
+				7891849706ACF0CE00C899F4 /* Sources */,
+				7891849806ACF0CE00C899F4 /* Rez */,
+				7891849906ACF0CE00C899F4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmpedeFCP;
+			productName = AmpedeFCP;
+			productReference = 7891849B06ACF0CE00C899F4 /* AmpedeFCP.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8D15AC270486D014006FF6A4 /* Ampede */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E4704650B24B13200C7FB73 /* Build configuration list for PBXNativeTarget "Ampede" */;
+			buildPhases = (
+				8D15AC280486D014006FF6A4 /* Headers */,
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+				787C7E6506A369AB00CE1FE6 /* CopyFiles */,
+			);
+			buildRules = (
+				78F71E0606AB0F8E00F0CF05 /* PBXBuildRule */,
+				782DA4EE06A4E8E1000DC550 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = Ampede;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Ampede;
+			productReference = 8D15AC370486D014006FF6A4 /* Ampede.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 8E4704750B24B13200C7FB73 /* Build configuration list for PBXProject "AmpedePDF" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* Ampede */;
+			projectDirPath = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* Ampede */,
+				787C7D8506A365BE00CE1FE6 /* Ampede LicenseControlled */,
+				787C7DAC06A3669700CE1FE6 /* AmpedeBundle */,
+				7891849A06ACF0CE00C899F4 /* AmpedeFCP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		787C7D8A06A365BE00CE1FE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787C7D8C06A365BE00CE1FE6 /* Ampede.nib in Resources */,
+				787C7D8E06A365BE00CE1FE6 /* InfoPlist.strings in Resources */,
+				787C7E4906A368F400CE1FE6 /* AmpedeBundle.bundle in Resources */,
+				787C7F9E06A371D600CE1FE6 /* LicenseAgreement.rtfd in Resources */,
+				7828957506C7BCE8001F23C6 /* UKFeedbackProvider.nib in Resources */,
+				7828957606C7BCEF001F23C6 /* SequenceDocument.nib in Resources */,
+				7828957706C7BD1E001F23C6 /* Info.plist in Resources */,
+				7828957806C7BD22001F23C6 /* about.tif in Resources */,
+				7828957906C7BD23001F23C6 /* default.pdf in Resources */,
+				7828957B06C7BD24001F23C6 /* com.ampede.ef.sequence.toolbar.quartz.png in Resources */,
+				7828957C06C7BD24001F23C6 /* com.ampede.ef.sequence.toolbar.software_update.tiff in Resources */,
+				7828957D06C7BD25001F23C6 /* com.ampede.ef.sequence.toolbar.licensing.gif in Resources */,
+				7828957E06C7BD25001F23C6 /* com.ampede.ef.sequence.toolbar.colorsync.png in Resources */,
+				7828957F06C7BD26001F23C6 /* com.ampede.ef.sequence.toolbar.preferences.tiff in Resources */,
+				7828958006C7BD28001F23C6 /* Localizable.strings in Resources */,
+				7828958106C7BD29001F23C6 /* MacPAD.url in Resources */,
+				7828958206C7BD32001F23C6 /* UKUpdateChecker.strings in Resources */,
+				789B6EF906CDA5D500578EAE /* Final Cut Pro-plugin.icns in Resources */,
+				7845FAD706D0A0A3002A16E3 /* com.ampede.ef.sequence.toolbar.file_info.tiff in Resources */,
+				7845FAD806D0A0AD002A16E3 /* com.ampede.ef.sequence.toolbar.pdf.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787C7DA906A3669700CE1FE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787C7DD106A3676E00CE1FE6 /* AmpedeBundle-Info.plist in Resources */,
+				787C7DE006A3678D00CE1FE6 /* Ampede_Prefix.pch in Resources */,
+				7828950206C7BAB8001F23C6 /* UKUpdateChecker.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7891849606ACF0CE00C899F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC2D0486D014006FF6A4 /* Ampede.nib in Resources */,
+				8D15AC2E0486D014006FF6A4 /* PDFLayerViewer.nib in Resources */,
+				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
+				78FEADE806AC82B400447BC8 /* PDFDocument.nib in Resources */,
+				78AA03DE06B48BA400F9B47C /* about.tif in Resources */,
+				78AA05F106B5547400F9B47C /* default.pdf in Resources */,
+				784C305306B8B4B600AFBA4F /* SequenceDocument.nib in Resources */,
+				784F589206B900F300470FA8 /* com.ampede.ef.sequence.toolbar.quartz.png in Resources */,
+				784F58B806B9048900470FA8 /* com.ampede.ef.sequence.toolbar.software_update.tiff in Resources */,
+				78839A7E06BB529F007ED111 /* com.ampede.ef.sequence.toolbar.licensing.gif in Resources */,
+				78839A8306BB5388007ED111 /* com.ampede.ef.sequence.toolbar.colorsync.png in Resources */,
+				78950F9506C3C29C00ABF031 /* com.ampede.ef.sequence.toolbar.preferences.tiff in Resources */,
+				7892DB9E06C6F4A200678F21 /* UKUpdateChecker.strings in Resources */,
+				7892DBA506C6F57600678F21 /* Localizable.strings in Resources */,
+				7892DBAF06C6F6FD00678F21 /* MacPAD.url in Resources */,
+				78FD540806C9E1B7003D9128 /* com.ampede.ef.sequence.toolbar.pdf.tiff in Resources */,
+				789B6EF806CDA5D500578EAE /* Final Cut Pro-plugin.icns in Resources */,
+				7845FAD606D0A0A3002A16E3 /* com.ampede.ef.sequence.toolbar.file_info.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		7891849806ACF0CE00C899F4 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		787C7F9606A36F3000CE1FE6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION,
+				$BUILT_PRODUCTS_DIR/LicenseControlTool.run,
+			);
+			outputPaths = (
+				$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION/Contents/MacOS/$PRODUCT_NAME,
+				$BUILT_PRODUCTS_DIR/LicenseControlTool.run,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#run LicenseControlTool to wrap application with LicenseControl:\n\ntouch \"$BUILT_PRODUCTS_DIR/LicenseControlTool.run\"\n\n/Users/ocean/Applications/LicenseControlTool.app/Contents/MacOS/LicenseControlTool \"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION\" ePI";
+		};
+		787C7FCA06A372EB00CE1FE6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$BUILT_PRODUCTS_DIR/LicenseControlTool.run\n",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -R \"$SRCROOT/LicenseAgreement.rtfd\" \"$BUILT_PRODUCTS_DIR/Ampede LCed.app/Contents/Resources/LicenseControl/Agreements\"";
+		};
+		7891861006AD0FB600C899F4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"\"~/Ampede/MakeAmpedeFCP\"",
+			);
+			outputPaths = (
+				"\"~/Build/AmpedeFCP\"",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "open /Users/bizman/Ampede/MakeAmpedeFCP.app";
+		};
+		7891863B06AD140C00C899F4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				/Users/bizman/Build/AmpedeFCP,
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -f \"/Users/bizman/Library/Preferences/Final Cut Pro User Data/Plugins/AmpedeFCP\";\nsleep 5;\n/Developer/Tools/CpMac -p \"/Users/bizman/Build/AmpedeFCP\" \"/Users/bizman/Library/Preferences/Final Cut Pro User Data/Plugins/AmpedeFCP\"";
+		};
+		7897B0C606AE40A4004BB74A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"\"/Users/bizman/Build/AmpedeFCP\"",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -f \"/Users/bizman/Build/AmpedeFCP\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		787C7D8F06A365BE00CE1FE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787C7F8606A36A8400CE1FE6 /* LCmain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787C7DAA06A3669700CE1FE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				787C7DBA06A3676A00CE1FE6 /* Ampede.m in Sources */,
+				787C7E1B06A3687300CE1FE6 /* main_LC.m in Sources */,
+				782894F106C7BA92001F23C6 /* PDFBoxView.m in Sources */,
+				782894F306C7BA93001F23C6 /* PDFView.m in Sources */,
+				782894F506C7BA94001F23C6 /* AboutView.m in Sources */,
+				782894F706C7BA95001F23C6 /* SequenceWindowController.m in Sources */,
+				782894F906C7BA96001F23C6 /* SequenceDocument.m in Sources */,
+				782894FB06C7BA98001F23C6 /* AmpedeDocument.m in Sources */,
+				782894FE06C7BA9A001F23C6 /* EFTextField.m in Sources */,
+				7828950106C7BAB6001F23C6 /* UKUpdateChecker.m in Sources */,
+				7828950406C7BABB001F23C6 /* UKKQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7891849706ACF0CE00C899F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				787C7D0506A2292100CE1FE6 /* Ampede.m in Sources */,
+				78FEAE1C06AC896400447BC8 /* PDFView.m in Sources */,
+				78AA03B406B489F200F9B47C /* AboutView.m in Sources */,
+				78AA043B06B49F5900F9B47C /* SequenceDocument.m in Sources */,
+				784C305D06B8B5EA00AFBA4F /* SequenceWindowController.m in Sources */,
+				7834A98506BE18D200AAD966 /* AmpedeDocument.m in Sources */,
+				7834AE7B06BE805300AAD966 /* UKKQueue.m in Sources */,
+				7890A21306C2616900944F20 /* EFTextField.m in Sources */,
+				7892DA8506C6C88C00678F21 /* PDFBoxView.m in Sources */,
+				7892DB9806C6F48100678F21 /* UKUpdateChecker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		787C7DB906A3673000CE1FE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 787C7DAC06A3669700CE1FE6 /* AmpedeBundle */;
+			targetProxy = 787C7DB806A3673000CE1FE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B4FDCFA73011CA2CEA /* PDFLayerViewer.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B5FDCFA73011CA2CEA /* English */,
+			);
+			name = PDFLayerViewer.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* Ampede.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+			);
+			name = Ampede.nib;
+			sourceTree = "<group>";
+		};
+		7892DB9906C6F4A200678F21 /* UKFeedbackProvider.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7892DB9A06C6F4A200678F21 /* English */,
+			);
+			name = UKFeedbackProvider.nib;
+			sourceTree = "<group>";
+		};
+		7892DB9B06C6F4A200678F21 /* UKUpdateChecker.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7892DB9C06C6F4A200678F21 /* English */,
+			);
+			name = UKUpdateChecker.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E4704660B24B13200C7FB73 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_ = "";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.3.0.sdk/System/Library/Frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ampede_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Ampede;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		8E4704670B24B13200C7FB73 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.3.0.sdk/System/Library/Frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ampede_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Ampede;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		8E4704680B24B13200C7FB73 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.3.0.sdk/System/Library/Frameworks\"";
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ampede_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Ampede;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		8E47046A0B24B13200C7FB73 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_ = "";
+				FRAMEWORK_SEARCH_PATHS = /Users/ocean/Library/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ampede_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "AmpedeBundle-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AmpedeBundle;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		8E47046B0B24B13200C7FB73 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = /Users/ocean/Library/Frameworks;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ampede_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "AmpedeBundle-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AmpedeBundle;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		8E47046C0B24B13200C7FB73 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Users/ocean/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ampede_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "AmpedeBundle-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AmpedeBundle;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+			};
+			name = Default;
+		};
+		8E47046E0B24B13200C7FB73 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_ = "";
+				FRAMEWORK_SEARCH_PATHS = /Users/ocean/Library/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ampede_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "Ampede LCed";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		8E47046F0B24B13200C7FB73 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = /Users/ocean/Library/Frameworks;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ampede_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "Ampede LCed";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		8E4704700B24B13200C7FB73 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Users/ocean/Library/Frameworks;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ampede_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "Ampede LCed";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		8E4704720B24B13200C7FB73 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_ = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "AmpedeFCP-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AmpedeFCP;
+				REZ_EXECUTABLE = NO;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		8E4704730B24B13200C7FB73 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "AmpedeFCP-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AmpedeFCP;
+				REZ_EXECUTABLE = NO;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		8E4704740B24B13200C7FB73 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "AmpedeFCP-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AmpedeFCP;
+				REZ_EXECUTABLE = NO;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+			};
+			name = Default;
+		};
+		8E4704760B24B13200C7FB73 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
+			};
+			name = Development;
+		};
+		8E4704770B24B13200C7FB73 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
+			};
+			name = Deployment;
+		};
+		8E4704780B24B13200C7FB73 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E4704650B24B13200C7FB73 /* Build configuration list for PBXNativeTarget "Ampede" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4704660B24B13200C7FB73 /* Development */,
+				8E4704670B24B13200C7FB73 /* Deployment */,
+				8E4704680B24B13200C7FB73 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		8E4704690B24B13200C7FB73 /* Build configuration list for PBXNativeTarget "AmpedeBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E47046A0B24B13200C7FB73 /* Development */,
+				8E47046B0B24B13200C7FB73 /* Deployment */,
+				8E47046C0B24B13200C7FB73 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		8E47046D0B24B13200C7FB73 /* Build configuration list for PBXNativeTarget "Ampede LicenseControlled" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E47046E0B24B13200C7FB73 /* Development */,
+				8E47046F0B24B13200C7FB73 /* Deployment */,
+				8E4704700B24B13200C7FB73 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		8E4704710B24B13200C7FB73 /* Build configuration list for PBXNativeTarget "AmpedeFCP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4704720B24B13200C7FB73 /* Development */,
+				8E4704730B24B13200C7FB73 /* Deployment */,
+				8E4704740B24B13200C7FB73 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		8E4704750B24B13200C7FB73 /* Build configuration list for PBXProject "AmpedePDF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4704760B24B13200C7FB73 /* Development */,
+				8E4704770B24B13200C7FB73 /* Deployment */,
+				8E4704780B24B13200C7FB73 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

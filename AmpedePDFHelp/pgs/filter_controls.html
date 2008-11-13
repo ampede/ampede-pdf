@@ -1,0 +1,38 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<link href="../sty/task_style.css" rel="stylesheet" media="all">
+		<title>Filter Controls</title>
+		<META NAME="DESCRIPTION" CONTENT="Explains PDF's keyframeable controls, present in the Filters tab of the Viewer.">
+	</head>
+
+	<body>
+		<a name="filter_controls"></a>
+		<div id="mainbox">
+			<div id="caticon">
+				<img src="../gfx/about_pdf.png" alt="Ampede PDF Icon" height="32" width="32">
+			</div>
+			<div id="pagetitle">
+				<h1>Filter Controls</h1>
+			</div>
+			<p>PDF has five keyframeable controls in the Filters tab of the Viewer window. (A sixth control is used to flush Final Cut Pro's image cache.) These controls mirror similar controls in Final Cut Pro's Motion tab, but support continuous rasterization. You should use PDF's controls, not the controls in the Motion tab.</p>
+			<p><br><b>Vector Scale</b></p>
+			<p>This control allows you to scale the image. 100 means 100% scale; the image will fill the frame perfectly, possibly with space on the sides or the top if you have <b>Preserve aspect ratio</b> enabled.</p>
+			<p><br><b>Scale Modifier</b></p>
+			<p>This control allows you to increase the range of the Vector Scale control. PDF multiplies the Vector Scale amount by the Scale Modifier amount. By default, Scale Modifier is set to one, and thus has no effect.</p>
+			<p><br><b>Vector Rotation</b></p>
+			<p>This control allows you to rotate the image. Rotation is performed around the <b>Vector Anchor Point</b> (see below), which by default is set to the center of the frame.</p>
+			<p><br><b>Vector Center</b></p>
+			<p>This control allows you to position the image within the frame. By clicking on the cross button, you can drag the image in the canvas. The vector center is defined to be the center of the frame before any rotation or movement is performed. If you change the <b>Vector Anchor Point</b> and then rotate the image, the vector center may not line up with the center of the rotated image. This can make it tricky to position.</p>
+			<div id="notebox">
+				<p>If you're having difficulty positioning in the Canvas, try zooming out the Canvas (to say, 25%) while you position. That gives you a bigger canvas to position on.</p>
+			</div>
+			<p><br><b>Vector Anchor Point</b></p>
+			<p>This control allows you to set the rotation center for the image. By clicking on the cross button, you can drag the anchor point in the canvas. The vector anchor point is defined to be a position in the frame before any scale, rotation, or movement is performed. For this reason, if you intend to modify the position of the vector anchor point, you should do so <b>first</b>, before you make any other transformations. It can be very difficult to modify the vector anchor point position if you have scaled, rotated, or repositioned the image.</p>
+			<p><br><b>Force Update</b></p>
+			<p>This control allows you to flush the Final Cut Pro image cache. You should click this control any time you make changes in the Ampede PDF window; otherwise, Final Cut Pro will not register the changes. <b>Force Update</b> has no effect on the rendered image; it does not matter if it is checked or not.</p>
+		</div>
+	</body>
+	
+</html>

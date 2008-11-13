@@ -1,0 +1,93 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<link href="../sty/task_style.css" rel="stylesheet" media="all">
+		<title>The Quartz Pane</title>
+		<META NAME="DESCRIPTION" CONTENT="The Quartz pane has options that control the quality and manner in which PDF rasterizes.">
+	</head>
+
+	<body>
+		<a name="quartz_pane"></a>
+		<div id="mainbox">
+			<div id="caticon">
+				<img src="../gfx/quartz_pane.png" alt="Quartz Pane Icon" height="32" width="32">
+			</div>
+			<div id="pagetitle">
+				<h1>The Quartz Pane</h1>
+			</div>
+			<p>The Quartz pane has options that control the quality and manner in which PDF rasterizes.</p>
+			<p>By default, PDF rasterizes your file with antialiasing turned on. The antialiasing is performed by Quartz, and in most cases is smooth enough that subpixel rendering is not required.</p>
+			<div id="taskbox">
+				<ul>
+					<li>Click the <b>Enable antialiasing</b> checkbox to enable/disable Quartz antialiasing. 
+				</ul>
+			</div>
+			<p>If Quartz antialiasing is enabled, you can also enable Quartz font smoothing. In general, you should leave font smoothing off; it's meant to be used for on-screen reading only. Font smoothing is off by default.</p>
+			<div id="taskbox">
+				<ul>
+					<li>Click the <b>Enable font smoothing</b> checkbox to enable/disable Quartz font smoothing. 
+				</ul>
+			</div>
+			<p><br><b>Rendering Intent</b></p>
+			<p>The rendering intent specifies how PDF maps colors from your image to those that are within the gamut of Final Cut Pro. There is no "best" rendering intent. You have to examine your source image and choose the one that best reflects its content.</p>
+			<p>The Default rendering intent is a special pseudo-intent provided by PDF. In Default mode, PDF uses the relative colorimetric rendering intent for rasterizing vector images, and it uses the perceptual rendering intent for bitmap images.</p>
+			<p>There are four other rendering intents for you to choose from; each is useful in different situations, depending on your source image. Here is how each rendering intent maps colors from your source image to Final Cut Pro [adapted from Apple's Quartz documentation]:
+			<ul>
+				<li><b>Absolute Colorimetric</b> &#8212; PDF maps colors from your source image that are outside the gamut of Final Cut Pro to the closest possible match inside the gamut of Final Cut Pro. This can produce a clipping effect, where two different color values in your source image are mapped to the same color value in Final Cut Pro. This is the best choice when the colors used in the source image can be transferred without modification to Final Cut Pro, as is often the case with logos or when spot colors are used.</li>
+				<li><b>Relative Colorimetric</b> &#8212; PDF shifts all colors of your source image to account for the difference between the white point of your source image and the white point of Final Cut Pro.</li>
+				<li><b>Perceptual</b> &#8212; PDF preserves the visual relationship between colors by compressing the gamut of your source image to fit inside the gamut of Final Cut Pro. Perceptual intent is good for photographs and other complex, detailed images.</li>
+				<li><b>Saturation</b> &#8212; PDF preserves the relative saturation value of the colors when converting into the gamut of Final Cut Pro. The result is an image with bright, saturated colors. Saturation intent is good for reproducing images with low detail, such as presentation charts and graphs.</li>
+			</ul>
+			</p>
+			<div id="taskbox">
+				<ul>
+					<li>To set the <b>Rendering intent</b>, choose a rendering intent from the pop-up menu.
+				</ul>
+			</div>
+			<div id="notebox">
+				<p>Note: the gamut of Final Cut Pro is user-adjustable. See the <a href="help:anchor=colorsync_pane bookID=Ampede%20PDF%20Help">ColorSync Pane</a> help for information on how to change it.</p>
+			</div>
+			<p><br><b>Interpolation Quality</b></p>
+			<p>Interpolation quality applies only to bitmap images in your files. It does not affect the quality of vector images.
+			<ul>
+				<li><b>No interpolation</b> &#8212; PDF does not make any attempt to smooth an image when it is scaled or rotated.
+				<li><b>Good interpolation</b> &#8212; PDF makes a reasonable attempt to smooth the image, but trades speed for quality.
+				<li><b>Best interpolation</b> &#8212; PDF uses its highest quality algorithm. This method achieves the best results, but is the slowest.
+			</ul>
+			</p>
+			<div id="taskbox">
+				<ul>
+					<li>To set the <b>Interpolation quality</b>, choose a quality level from the pop-up menu.
+				</ul>
+			</div>
+			<p><br><b>Curve Flatness</b></p>
+			<p>Curve flatness refers to the accuracy with which PDF renders vector content. For most situations, 1.0 is perfectly acceptable and will render the fastest. You can improve PDF's accuracy by choosing smaller curve flatness values, but this will increase rendering times. You should carefully evaluate whether the increased rendering time justifies the quality improvement.</p>
+			<div id="taskbox">
+				<ul>
+					<li>To set the <b>Curve flatness</b>, drag the slider or type a number in the text box.
+				</ul>
+			</div>
+			<p><br><b>Subpixel Rendering</b></p>
+			<p>PDF has full support for subpixel rendering.</p>
+			<div id="taskbox">
+				<ul>
+					<li>Click the <b>Enable subpixel rendering</b> checkbox to enable/disable subpixel rendering. 
+				</ul>
+			</div>
+			<p>You can adjust how much super-sampling PDF performs. Keep in mind that higher amounts can greatly increases RAM usage and rendering times.</p>
+			<div id="taskbox">
+				<ul>
+					<li>To set the amount of <b>Super-sampling</b>, drag the slider or type a number in the text box.
+				</ul>
+			</div>
+			<p>You can also adjust how PDF performs downsampling to your Final Cut Pro resolution. Lanczos3 is faster than Lanczos5, but produces slightly worse results. Keep in mind that both downsampling algorithms produce high-quality results. Lanczos3 typically has sufficient quality, and it's the default. Both downsampling algorithms are Velocity Engine optimized for both the G4 and G5.</p>
+			<div id="taskbox">
+				<ul>
+					<li>To set the <b>Downsampling algorithm</b>, choose an algorithm from the pop-up menu.
+				</ul>
+			</div>
+		</div>
+	</body>
+	
+</html>

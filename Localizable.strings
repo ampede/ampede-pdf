@@ -1,0 +1,7 @@
+"FEEDBACK_EMAIL" = "feedback@ampede.com";
+	
+"FEEDBACK_SUBJECT_PREFIX" = "[PDF FEEDBACK] ";
+	
+	This is a little prefix that will be written into the subject line of the e-mail sent to your user. You can use this to filter out feedback messages about your various applications etc.
+	
+"FEEDBACK_URL" = "mailto:feedback@ampede.com?subject=encoded%20subject";
